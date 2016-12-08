@@ -4,6 +4,8 @@ Origami Navigation Service
 
 Provides consistent navigation for FT applications. See [the production service][production-url] for API information.
 
+**:exclamation: If you need to edit the links that the Navigation Service provides, this isn't the right place – you need to edit files in the [Origami Navigation Data repo][navigation-data]**
+
 **:warning: This is V2 of the navigation service, and is currently in development. If you're looking for the code that's running in production, see the [V1 Navigation Service repo](https://github.com/Financial-Times/origami-navigation-service-v1)**
 
 [![Build status](https://img.shields.io/circleci/project/Financial-Times/origami-navigation-service.svg)][ci]
@@ -155,6 +157,7 @@ The Financial Times has published this software under the [MIT license][license]
 [heroku-qa]: https://dashboard.heroku.com/apps/origami-navigation-service-qa
 [heroku]: https://heroku.com/
 [license]: http://opensource.org/licenses/MIT
+[navigation-data]: https://github.com/Financial-Times/origami-navigation-data
 [node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
 [pingdom-eu]: https://my.pingdom.com/newchecks/checks#check=2301115
