@@ -57,6 +57,11 @@ endif
 	@sleep 300 && node ./scripts/purge.js
 	@$(DONE)
 
+update-cmdb:
+ifndef CMDB_API_KEY
+	$(error CMDB_API_KEY is not set, cannot send updates to CMDB. You can find the key in LastPass)
+endif
+	@curl -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/endpoint/origami-navigation-service-eu.herokuapp.com -d @health-and-about-endpoints.json
 
 # Change Request tasks
 # --------------------
