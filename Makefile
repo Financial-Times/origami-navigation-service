@@ -51,6 +51,7 @@ promote:
 ifndef CR_API_KEY
 	$(error CR_API_KEY is not set, change requests cannot be created. You can find the key in LastPass)
 endif
+	@make update-cmdb
 	@heroku pipelines:promote --app origami-navigation-service-qa
 	@make change-request-prod
 	@echo "Purging all front-end endpoints, this will take 5 minutes, please don't cancel this command."
