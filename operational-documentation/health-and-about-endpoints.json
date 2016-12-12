@@ -1,0 +1,12 @@
+{
+	"base": "origami-navigation-service-eu.herokuapp.com",
+	"protocol": "https",
+	"healthSuffix": "__health",
+	"aboutSuffix": "__about",
+	"isLive": false,
+	"isHealthcheckFor": {
+		"system": [{
+			"dataItemID": "origami-navigation-service"
+		}]
+	}
+}

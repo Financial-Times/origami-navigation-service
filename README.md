@@ -18,6 +18,7 @@ Table Of Contents
   * [Requirements](#requirements)
   * [Running Locally](#running-locally)
   * [Configuration](#configuration)
+  * [Operational Documentation](#operational-documentation)
   * [Testing](#testing)
   * [Deployment](#deployment)
   * [Monitoring](#monitoring)
@@ -63,6 +64,13 @@ The service can also be configured by sending HTTP headers, these would normally
 
   * `FT-Origami-Service-Base-Path`: The base path for the service, this gets prepended to all paths in the HTML and ensures that redirects work when the CDN rewrites URLs.
 
+Operational Documentation
+-------------------------
+
+The source documentation for the [runbook](https://dewey.ft.com/origami-navigation-service.html) and [healthcheck](https://endpointmanager.in.ft.com/manage/origami-navigation-service-eu.herokuapp.com) [endpoints](https://endpointmanager.in.ft.com/manage/origami-navigation-service-us.herokuapp.com) are stored in the `operational-documentation` folder. These files are pushed to CMDB upon every promotion to production. You can push them to CMDB manually by running the following command:
+```sh
+make update-cmdb
+```
 
 Testing
 -------

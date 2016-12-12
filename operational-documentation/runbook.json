@@ -1,0 +1,47 @@
+{
+	"name": "origami-navigation-service",
+	"description": "Provides consistent navigation for FT applications",
+	"serviceTier": "Bronze",
+	"lifecycleStage": "Requirements",
+	"primaryURL": "https://www.ft.com/__origami/service/navigation/v2",
+	"moreInformation": "https://github.com/Financial-Times/origami-navigation-service",
+	"troubleshooting": "",
+	"monitoring": "",
+	"primaryContact": {
+		"contact": [{
+			"dataItemID": "technicaloperations",
+			"name": "Technical Operations",
+			"contactType": "Team",
+			"slack": "techops",
+			"email": "technical.operations@ft.com",
+			"phone": "3001"
+		}]
+	},
+	"secondaryContact": {
+		"contact": [{
+			"dataItemID": "origamisupport",
+			"name": "Origami team",
+			"contactType": "Team",
+			"slack": "ft-origami",
+			"email": "origami.support@ft.com"
+		}]
+	},
+	"productOwner": {
+		"contact": [{
+			"dataItemID": "alicebartlett",
+			"name": "Alice Bartlett",
+			"contactType": "Person",
+			"slack": "ft-origami",
+			"email": "origami.support@ft.com"
+		}]
+	},
+	"technicalLead": {
+		"contact": [{
+			"dataItemID": "alicebartlett",
+			"name": "Alice Bartlett",
+			"contactType": "Person",
+			"slack": "ft-origami",
+			"email": "origami.support@ft.com"
+		}]
+	}
+}

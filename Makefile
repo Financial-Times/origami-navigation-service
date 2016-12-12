@@ -46,12 +46,20 @@ promote:
 ifndef CR_API_KEY
 	$(error CR_API_KEY is not set, change requests cannot be created. You can find the key in LastPass)
 endif
+	@make update-cmdb
 	@heroku pipelines:promote --app origami-navigation-service-qa
 	@make change-request-prod
 	@echo "Purging all front-end endpoints, this will take 5 minutes, please don't cancel this command."
 	@sleep 300 && node ./scripts/purge.js
 	@$(DONE)
 
+update-cmdb:
+ifndef CMDB_API_KEY
+	$(error CMDB_API_KEY is not set, cannot send updates to CMDB. You can find the key in LastPass)
+endif
+	@curl --silent --show-error -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/endpoint/origami-navigation-service-eu.herokuapp.com -d @operational-documentation/health-and-about-endpoints.json
+	@curl --silent --show-error -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/endpoint/origami-navigation-service-us.herokuapp.com -d @operational-documentation/health-and-about-endpoints.json
+	@curl --silent --show-error -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/system/origami-navigation-service -d @operational-documentation/runbook.json
 
 # Change Request tasks
 # --------------------
