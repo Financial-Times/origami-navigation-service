@@ -8,14 +8,171 @@
 
 		<div class="o-techdocs-main o-techdocs-content">
 
-			<h1>
-				API Reference
-			</h1>
+			<h1>API Reference</h1>
+
+
+			<h2 id="endpoints">Endpoints</h2>
+
+			<h3 id="endpoints-get-v2-menus">GET /v2/menus</h3>
 
 			<p>
-				TODO: The API reference should be written once we agree
-				on an API and before we actually build it.
+				Fetch all menus that the Navigation Service provides links for, including
+				the full menu structures.
 			</p>
+
+			<h4>Response</h4>
+
+			<p>
+				Responds with a JSON object, where each property is the name of a menu and each value
+				is a <a href="/v2/docs/api#entity-menu">Menu entity</a>. E.g.
+			</p>
+
+			<pre><code>{
+	"example-menu": {
+		"label": "Example Menu",
+		"items": [
+			{
+				"label": "Example Item",
+				"url": "http://example.com/",
+				"submenu": null
+			}
+		]
+	}
+}</code></pre>
+
+			<h3 id="endpoints-get-v2-menus">GET /v2/menus/<var>:name</var></h3>
+
+			<p>
+				Fetch a single menu by name.
+			</p>
+
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Param</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>name</code></td>
+						<td>
+							<p>
+								The name of the menu being fetched. This should reference an existing menu in the
+								<a href="https://github.com/Financial-Times/origami-navigation-data">Navigation Data repo</a>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h4>Response</h4>
+
+			<p>
+				Responds with a JSON object representing the requested menu. This will be a
+				<a href="v2/docs/api#entities-menu">Menu entity</a>. E.g.
+			</p>
+
+			<pre><code>{
+	"label": "Example Menu",
+	"items": [
+		{
+			"label": "Example Item",
+			"url": "http://example.com/",
+			"submenu": null
+		}
+	]
+}</code></pre>
+
+
+			<h2 id="entities">Entity Types</h2>
+
+			<h3 id="entities-menu">Menu</h3>
+
+			<p>
+				A Menu entity represents a navigation menu and can contain multiple
+				<a href="v2/docs/api#entities-item">Item entities</a>.
+			</p>
+
+			<pre><code>{
+	"label": "Example Menu",
+	"items": []
+}</code></pre>
+
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Property</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>label</code></td>
+						<td>
+							<p>
+								<code>String</code>.
+								The label to display when one is required.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td><code>items</code></td>
+						<td>
+							<p>
+								<code>Array</code>.
+								An array of <a href="v2/docs/api#entities-item">Item entities</a>
+								that the menu contains.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h3 id="entities-item">Item</h3>
+
+			<p>
+				An Item entity represents a single navigation item and any submenus that it may have.
+			</p>
+
+			<pre><code>{
+	"label": "Example Item",
+	"url": "http://example.com/",
+	"submenu": null
+}</code></pre>
+
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Property</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>label</code></td>
+						<td>
+							<p>
+								<code>String</code>.
+								The label to display when one is required.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td><code>url</code></td>
+						<td>
+							<p>
+								<code>String</code>.
+								The URL that the menu item links to.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td><code>submenu</code></td>
+						<td>
+							<p>
+								<code>Object</code> or <code>null</code>.
+								A <a href="v2/docs/api#entities-menu">Menu entity</a> representing
+								the submenu of this item, or <code>null</code> if there is no submenu.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
 
 		</div>
 
