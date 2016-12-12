@@ -10,9 +10,3 @@ test:
   override:
     - make verify
     - make test
-
-deployment:
-  staging:
-    branch: master
-    commands:
-      - make deploy
