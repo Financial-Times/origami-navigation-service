@@ -42,11 +42,6 @@ deploy:
 	@make change-request-qa
 	@$(DONE)
 
-deploy-ci:
-	@git push git@heroku.com:origami-navigation-service-qa.git
-	@make change-request-qa
-	@$(DONE)
-
 promote:
 ifndef CR_API_KEY
 	$(error CR_API_KEY is not set, change requests cannot be created. You can find the key in LastPass)
