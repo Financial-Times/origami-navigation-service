@@ -40,6 +40,7 @@ test-integration:
 deploy:
 	@git push https://git.heroku.com/origami-navigation-service-qa.git
 	@make change-request-qa
+	@make grafana-push
 	@$(DONE)
 
 promote:
@@ -60,6 +61,23 @@ endif
 	@curl --silent --show-error -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/endpoint/origami-navigation-service-eu.herokuapp.com -d @operational-documentation/health-and-about-endpoints.json
 	@curl --silent --show-error -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/endpoint/origami-navigation-service-us.herokuapp.com -d @operational-documentation/health-and-about-endpoints.json
 	@curl --silent --show-error -H 'Content-Type: application/json' -H 'apikey: ${CMDB_API_KEY}' -X PUT https://cmdb.ft.com/v2/items/system/origami-navigation-service -d @operational-documentation/runbook.json
+
+
+# Monitoring tasks
+# ----------------
+
+grafana-pull:
+ifndef GRAFANA_API_KEY
+	$(error GRAFANA_API_KEY is not set)
+endif
+	@grafana pull origami-navigation-service ./operational-documentation/grafana-dashboard.json
+
+grafana-push:
+ifndef GRAFANA_API_KEY
+	$(error GRAFANA_API_KEY is not set)
+endif
+	@grafana push origami-navigation-service ./operational-documentation/grafana-dashboard.json --overwrite
+
 
 # Change Request tasks
 # --------------------
