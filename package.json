@@ -35,7 +35,7 @@
     "throng": "^4.0.0"
   },
   "devDependencies": {
-    "@financial-times/grafana-tools": "^0.2.1",
+    "@financial-times/grafana-tools": "^1.0.0",
     "@financial-times/release-log": "^1.0.0",
     "eslint": "^2",
     "istanbul": "^0.4",
