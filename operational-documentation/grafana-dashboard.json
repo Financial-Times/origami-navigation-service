@@ -1,28 +1,9 @@
 {
   "dashboard": {
-    "__requires": [
-      {
-        "id": "graph",
-        "name": "Graph",
-        "type": "panel",
-        "version": ""
-      },
-      {
-        "id": "grafana",
-        "name": "Grafana",
-        "type": "grafana",
-        "version": "4.0.1"
-      },
-      {
-        "id": "graphite",
-        "name": "Graphite",
-        "type": "datasource",
-        "version": "1.0.0"
-      }
-    ],
     "annotations": {
       "list": []
     },
+    "description": "",
     "editable": true,
     "gnetId": null,
     "hideControls": false,
@@ -30,6 +11,29 @@
     "links": [],
     "refresh": "1m",
     "rows": [
+      {
+        "collapse": false,
+        "height": 16,
+        "panels": [
+          {
+            "content": "**Note:** This dashboard is managed through the [Origami Navigation Service repo](https://github.com/Financial-Times/origami-navigation-service). Changes you make in the interface may be overwritten by automated deployments.\n",
+            "editable": true,
+            "error": false,
+            "id": 9,
+            "links": [],
+            "mode": "markdown",
+            "span": 12,
+            "title": "",
+            "type": "text"
+          }
+        ],
+        "repeat": null,
+        "repeatIteration": null,
+        "repeatRowId": null,
+        "showTitle": false,
+        "title": "Dashboard Row",
+        "titleSize": "h6"
+      },
       {
         "collapse": false,
         "height": "250px",
@@ -800,6 +804,6 @@
     },
     "timezone": "browser",
     "title": "Origami Navigation Service",
-    "version": 0
+    "version": 5
   }
 }
