@@ -158,7 +158,7 @@ The Financial Times has published this software under the [MIT license][license]
 
 
 [ci]: https://circleci.com/gh/Financial-Times/origami-navigation-service
-[grafana]: http://grafana.ft.com/dashboard/db/origami-navigation-service-v2
+[grafana]: http://grafana.ft.com/dashboard/db/origami-navigation-service
 [heroku-pipeline]: https://dashboard.heroku.com/pipelines/9cd9033e-fa9d-42af-bfe9-b9d0aa6f4a50
 [heroku-production-eu]: https://dashboard.heroku.com/apps/origami-navigation-service-eu
 [heroku-production-us]: https://dashboard.heroku.com/apps/origami-navigation-service-us
@@ -168,9 +168,9 @@ The Financial Times has published this software under the [MIT license][license]
 [navigation-data]: https://github.com/Financial-Times/origami-navigation-data
 [node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
-[pingdom-eu]: https://my.pingdom.com/newchecks/checks#check=2301115
-[pingdom-us]: https://my.pingdom.com/newchecks/checks#check=2301117
+[pingdom-eu]: https://my.pingdom.com/newchecks/checks#check=2287222
+[pingdom-us]: https://my.pingdom.com/newchecks/checks#check=2287223
 [production-url]: https://www.ft.com/__origami/service/navigation/v2
-[sentry-production]: https://sentry.io/nextftcom/origami-navigation-service-producti/
+[sentry-production]: https://sentry.io/nextftcom/origami-navigation-service-pro/
 [sentry-qa]: https://sentry.io/nextftcom/origami-navigation-service-qa/
-[splunk]: https://financialtimes.splunkcloud.com/
+[splunk]: https://financialtimes.splunkcloud.com/en-US/app/search/search?q=search%20(app%3Dorigami-navigation-v1-eu%20OR%20app%3Dorigami-navigation-v1-us)

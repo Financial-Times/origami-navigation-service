@@ -27,7 +27,67 @@
 	],
 	"links": [
 		{
-			"TODO": "copy structure from Image Service"
+			"url": "https://github.com/Financial-Times/origami-navigation-service/issues",
+			"category": "issues"
+		},
+		{
+			"url": "https://github.com/Financial-Times/origami-navigation-service",
+			"category": "repo"
+		},
+		{
+			"url": "https://dashboard.heroku.com/apps/origami-navigation-service-eu",
+			"category": "deployment",
+			"description": "Heroku dashboard (Production EU)"
+		},
+		{
+			"url": "https://dashboard.heroku.com/apps/origami-navigation-service-us",
+			"category": "deployment",
+			"description": "Heroku dashboard (Production US)"
+		},
+		{
+			"url": "https://dashboard.heroku.com/apps/origami-navigation-service-qa",
+			"category": "deployment",
+			"description": "Heroku dashboard (QA)"
+		},
+		{
+			"url": "https://dashboard.heroku.com/pipelines/17603799-00d6-4e45-af5c-c21fb88321aa",
+			"category": "deployment",
+			"description": "Heroku dashboard (QA > Production pipeline)"
+		},
+		{
+			"url": "http://grafana.ft.com/dashboard/db/origami-navigation-service",
+			"category": "monitoring",
+			"description": "Grafana dashboard"
+		},
+		{
+			"url": "https://my.pingdom.com/newchecks/checks#check=2287222",
+			"category": "monitoring",
+			"description": "Pingdom check (Production EU)"
+		},
+		{
+			"url": "https://my.pingdom.com/newchecks/checks#check=2287223",
+			"category": "monitoring",
+			"description": "Pingdom check (Production US)"
+		},
+		{
+			"url": "https://github.com/Financial-Times/origami-navigation-service#readme",
+			"category": "documentation",
+			"description": "README"
+		},
+		{
+			"url": "https://sentry.io/nextftcom/origami-navigation-service-pro/",
+			"category": "monitoring",
+			"description": "Sentry dashboard (Production)"
+		},
+		{
+			"url": "https://sentry.io/nextftcom/origami-navigation-service-qa/",
+			"category": "monitoring",
+			"description": "Sentry dashboard (QA)"
+		},
+		{
+			"url": "https://financialtimes.splunkcloud.com/en-US/app/search/search?q=search%20(app%3Dorigami-navigation-v1-eu%20OR%20app%3Dorigami-navigation-v1-us)",
+			"category": "monitoring",
+			"description": "Splunk (Production)"
 		}
 	]
 }
