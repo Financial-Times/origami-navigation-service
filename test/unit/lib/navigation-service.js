@@ -12,6 +12,7 @@ describe('lib/navigation-service', () => {
 	let handleErrors;
 	let healthChecks;
 	let morgan;
+	let navigationData;
 	let navigationService;
 	let notFound;
 	let requireAll;
@@ -33,6 +34,9 @@ describe('lib/navigation-service', () => {
 
 		morgan = require('../mock/morgan.mock');
 		mockery.registerMock('morgan', morgan);
+
+		navigationData = require('../mock/ft-poller.mock');
+		mockery.registerMock('./navigation-data', navigationData);
 
 		notFound = sinon.spy();
 		mockery.registerMock('./middleware/not-found', notFound);
@@ -56,7 +60,8 @@ describe('lib/navigation-service', () => {
 			config = {
 				environment: 'test',
 				port: 1234,
-				systemCode: 'example-system-code'
+				systemCode: 'example-system-code',
+				navigationDataStore: 'http://navstore/'
 			};
 			routes = {
 				foo: sinon.spy(),
@@ -114,6 +119,18 @@ describe('lib/navigation-service', () => {
 
 		it('sets the Express application `navigationServiceConfig` property to `config`', () => {
 			assert.strictEqual(express.mockApp.navigationServiceConfig, config);
+		});
+
+		it('creates a navigation data poller', () => {
+			assert.calledOnce(navigationData);
+			assert.calledWith(navigationData, {
+				dataStore: config.navigationDataStore,
+				version: 2
+			});
+		});
+
+		it('sets the Express application `navigationDataV2` property to the navigation data poller', () => {
+			assert.strictEqual(express.mockApp.navigationDataV2, navigationData.mockPoller);
 		});
 
 		it('initialises the health-checks', () => {

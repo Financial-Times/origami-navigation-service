@@ -26,6 +26,7 @@
   "dependencies": {
     "@financial-times/n-express": "^17.16.0",
     "dotenv": "^2",
+    "ft-poller": "^2.8.5",
     "heroku-node-settings": "^1.0.2",
     "http-errors": "^1",
     "morgan": "^1",

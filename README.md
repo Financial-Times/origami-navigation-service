@@ -59,6 +59,7 @@ We configure Origami Navigation Service using environment variables. In developm
   * `NODE_ENV`: The environment to run the application in. One of `production`, `development` (default), or `test` (for use in automated tests).
   * `LOG_LEVEL`: A Syslog-compatible level at which to emit log events to stdout. One of `trace`, `debug`, `info`, `warn`, `error`, or `crit`.
   * `RAVEN_URL`: The Sentry URL to send error information to.
+  * `NAVIGATION_DATA_STORE`: The location of the JSON navigation data that powers the service. This should be a URL.
 
 The service can also be configured by sending HTTP headers, these would normally be set in your CDN config:
 
