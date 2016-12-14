@@ -114,8 +114,6 @@ CR_API_KEY=<API-KEY> make promote
 Monitoring
 ----------
 
-**TODO correct these URLs once we have them – some still point to the Image Service checks**
-
   * [Grafana dashboard][grafana]: graph memory, load, and number of requests
   * [Pingdom check (Production EU)][pingdom-eu]: checks that the EU production app is responding
   * [Pingdom check (Production US)][pingdom-us]: checks that the US production app is responding

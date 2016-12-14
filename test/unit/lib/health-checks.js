@@ -28,11 +28,17 @@ describe('lib/health-checks', () => {
 		beforeEach(() => {
 			healthChecks.pingService = sinon.stub();
 			sinon.stub(global, 'setInterval');
-			healthChecks.init({});
+			healthChecks.init({
+				navigationDataStore: 'http://navstore/'
+			});
 		});
 
 		afterEach(() => {
 			global.setInterval.restore();
+		});
+
+		it('calls `pingService` with a v2 navigation data store URL', () => {
+			assert.calledWithExactly(healthChecks.pingService, 'navigationDataStoreV2', 'http://navstore/v2/navigation.json');
 		});
 
 		it('sets an interval to ping the services again', () => {
@@ -111,6 +117,26 @@ describe('lib/health-checks', () => {
 
 			it('sets the status of the check to `false`', () => {
 				assert.isFalse(healthChecks.statuses.foo);
+			});
+
+		});
+
+	});
+
+	it('has a `navigationDataStoreV2` property', () => {
+		assert.isObject(healthChecks.navigationDataStoreV2);
+	});
+
+	describe('.navigationDataStoreV2', () => {
+
+		it('has a `getStatus` method', () => {
+			assert.isFunction(healthChecks.navigationDataStoreV2.getStatus);
+		});
+
+		describe('.getStatus()', () => {
+
+			it('returns an object', () => {
+				assert.isObject(healthChecks.navigationDataStoreV2.getStatus());
 			});
 
 		});

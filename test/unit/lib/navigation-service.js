@@ -83,7 +83,7 @@ describe('lib/navigation-service', () => {
 			const options = express.firstCall.args[0];
 			assert.isObject(options);
 			assert.isArray(options.healthChecks);
-			// TODO test that health-checks are actually passed in (once we have some)
+			assert.strictEqual(options.healthChecks[0], healthChecks.navigationDataStoreV2);
 		});
 
 		it('configures handlebars', () => {
