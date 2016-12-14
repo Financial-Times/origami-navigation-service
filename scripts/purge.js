@@ -23,7 +23,11 @@ const paths = [
 	'/v1',
 	'/v1/',
 	'/v2',
-	'/v2/'
+	'/v2/',
+	'/v2/docs/api',
+	'/v2/docs/api/',
+	'/v2/docs/migration',
+	'/v2/docs/migration/'
 ];
 
 const endpoints = paths.map(path => hostname + path);
