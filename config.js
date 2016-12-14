@@ -6,6 +6,6 @@ module.exports = {
 	systemCode: 'origami-navigation-service',
 	log: console,
 	logLevel: process.env.LOG_LEVEL || 'info',
-	navigationDataStore: process.env.NAVIGATION_DATA_STORE,
+	navigationDataStore: process.env.NAVIGATION_DATA_STORE || 'https://www.ft.com/__origami/service/navigation-data',
 	port: process.env.PORT || 9001
 };
