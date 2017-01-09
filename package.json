@@ -24,12 +24,11 @@
     "start": "heroku-node-settings index.js"
   },
   "dependencies": {
-    "@financial-times/n-express": "^17.16.0",
+    "@financial-times/origami-service": "^0.2.0",
     "dotenv": "^2",
     "ft-poller": "^2.8.5",
     "heroku-node-settings": "^1.0.2",
     "http-errors": "^1",
-    "morgan": "^1",
     "request": "^2",
     "require-all": "^2",
     "statuses": "^1",

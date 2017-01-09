@@ -23,19 +23,18 @@ before(function() {
 			return navigationService({
 				environment: 'test',
 				log: mockLog,
-				logLevel: process.env.LOG_LEVEL || 'trace',
+				navigationDataStore: this.mockStore.address,
 				port: process.env.PORT || null,
-				suppressLogs: true,
-				navigationDataStore: this.mockStore.address
-			});
+				requestLogFormat: null
+			}).listen();
 		})
-		.then(service => {
-			this.agent = supertest.agent(service);
-			this.service = service;
+		.then(app => {
+			this.agent = supertest.agent(app);
+			this.app = app;
 		});
 });
 
 after(function() {
-	this.service.server.close();
+	this.app.origami.server.close();
 	this.mockStore.server.close();
 });

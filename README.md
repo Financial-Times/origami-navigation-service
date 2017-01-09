@@ -51,17 +51,18 @@ Now you can access the app over HTTP on port `8080`: [http://localhost:8080/](ht
 Configuration
 -------------
 
-We configure Origami Navigation Service using environment variables. In development, configurations are set in a `.env` file. In production, these are set through Heroku config.
+We configure Origami Navigation Service using environment variables. In development, configurations are set in a `.env` file. In production, these are set through Heroku config. Further documentation on the available options can be found in the [Origami Service documentation][service-options].
 
   * `PORT`: The port to run the application on.
-  * `NODE_ENV`: The environment to run the application in. One of `production`, `development` (default), or `test` (for use in automated tests).
-  * `LOG_LEVEL`: A Syslog-compatible level at which to emit log events to stdout. One of `trace`, `debug`, `info`, `warn`, `error`, or `crit`.
-  * `RAVEN_URL`: The Sentry URL to send error information to.
   * `NAVIGATION_DATA_STORE`: The location of the JSON navigation data that powers the service. This should be a URL.
+  * `NODE_ENV`: The environment to run the application in. One of `production`, `development` (default), or `test` (for use in automated tests).
+  * `REGION`: The region the application is running in.
+  * `SENTRY_DSN`: The Sentry URL to send error information to.
 
 The service can also be configured by sending HTTP headers, these would normally be set in your CDN config:
 
   * `FT-Origami-Service-Base-Path`: The base path for the service, this gets prepended to all paths in the HTML and ensures that redirects work when the CDN rewrites URLs.
+
 
 Operational Documentation
 -------------------------
@@ -70,6 +71,7 @@ The source documentation for the [runbook](https://dewey.ft.com/origami-navigati
 ```sh
 make update-cmdb
 ```
+
 
 Testing
 -------
@@ -170,4 +172,5 @@ The Financial Times has published this software under the [MIT license][license]
 [production-url]: https://www.ft.com/__origami/service/navigation/v2
 [sentry-production]: https://sentry.io/nextftcom/origami-navigation-service-pro/
 [sentry-qa]: https://sentry.io/nextftcom/origami-navigation-service-qa/
+[service-options]: https://github.com/Financial-Times/origami-service#options
 [splunk]: https://financialtimes.splunkcloud.com/en-US/app/search/search?q=search%20(app%3Dorigami-navigation-v1-eu%20OR%20app%3Dorigami-navigation-v1-us)

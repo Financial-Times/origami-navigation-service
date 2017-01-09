@@ -35,7 +35,7 @@ describe('lib/navigation-data', () => {
 			assert.calledWith(Poller, {
 				autostart: true,
 				refreshInterval: 60 * 1000,
-				url: `http://navstore/v5/navigation.json`
+				url: 'http://navstore/v5/navigation.json'
 			});
 		});
 
@@ -56,7 +56,7 @@ describe('lib/navigation-data', () => {
 				assert.calledWith(Poller, {
 					autostart: true,
 					refreshInterval: 60 * 1000,
-					url: `http://navstore/v5/navigation.json`
+					url: 'http://navstore/v5/navigation.json'
 				});
 			});
 
