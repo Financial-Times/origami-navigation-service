@@ -75,19 +75,6 @@
 				</li>
 				{{/each}}
 			</ul>
-
-
-
-				<ul class="o-header__nav-list o-header__nav-list--right" data-trackable="user-nav">
-						<li class="o-header__nav-item">
-							<!--signin-->
-								<!--<a class="o-header__nav-link" href="{{url}}" >{{label}}</a>-->
-						</li>
-						<li class="o-header__nav-item">
-							<!--subscribe-->
-								<!--<a class="o-header__nav-button" href="{{url}}" >{{label}}</a>-->
-						</li>
-				</ul>
 		</div>
 	</nav>
 </header>
@@ -142,8 +129,8 @@
 								{{#if submenu}}
 									<div class="o-header__drawer-menu-toggle-wrapper">
 										{{#if submenu.items}}
-										<a class="o-header__drawer-menu-link o-header__drawer-menu-link--parent o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{url}}" >{{label}}</a>
-										<button class="o-header__drawer-menu-toggle o-header__drawer-menu-toggle--{{#if selected}}selected{{else}}unselected{{/if}}" aria-controls="o-header-drawer-child-{{@index}}" data-trackable="sub-level-toggle | {{label}}">
+										<a class="o-header__drawer-menu-link o-header__drawer-menu-link--parent" href="{url}}" >{{label}}</a>
+										<button class="o-header__drawer-menu-toggle" aria-controls="o-header-drawer-child-{{@index}}" data-trackable="sub-level-toggle | {{label}}">
 											Show more {{label}} links
 										</button>
 										{{/if}}
@@ -151,12 +138,12 @@
 									<ul class="o-header__drawer-menu-list o-header__drawer-menu-list--child" id="o-header-drawer-child-{{@index}}" data-trackable="sub-level">
 										{{#each submenu.items}}
 											<li class="o-header__drawer-menu-item">
-												<a class="o-header__drawer-menu-link o-header__drawer-menu-link--child o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" >{{label}}</a>
+												<a class="o-header__drawer-menu-link o-header__drawer-menu-link--child" href="{{url}}" >{{label}}</a>
 											</li>
 										{{/each}}
 									</ul>
 								{{else}}
-									<a class="o-header__drawer-menu-link o-header__drawer-menu-link--{{../variation}} o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" >{{label}}</a>
+									<a class="o-header__drawer-menu-link" href="{{url}}" >{{label}}</a>
 								{{/if}}
 							</li>
 						{{/each}}
@@ -179,13 +166,14 @@
 	</div>
 </div>
 
-<!-- Main content (outer div for layout, inner for formatting) -->
 <div class="o-techdocs-content example-content">
 	<h1>Example website using Origami-Navigation-Service</h1>
 
-	<p class="o-techdocs-leadbody">The navigation for this page is controlled by the <a href="https://github.com/Financial-Times/origami-navigation-data">Origami Navigation Data</a> repository. When the Origami Navigation Data is updated, the navigation on this page will be updated within 10 minutes.</p>
+	<p >The navigation for this page is controlled by the <a href="https://github.com/Financial-Times/origami-navigation-data">Origami Navigation Data</a> repository. When the Origami Navigation Data is updated, the navigation on this page will be updated within 10 minutes.</p>
 
 	<p>The code for this can be found on <a href="https://github.com/Financial-Times/origami-navigation-service/blob/master/lib/routes/v2/docs/example.js">Github</a>.</p>
+
+	{{>navigation}}
 </div>
 
 <footer class="o-footer o-footer--theme-dark" data-o-component="o-footer" data-o-footer--no-js="">
