@@ -20,6 +20,23 @@
 				the full menu structures.
 			</p>
 
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Query Param</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>source</code></td>
+						<td>
+							<p>
+								A valid system code which identifies the application making this request.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<h4>Response</h4>
 
 			<p>
@@ -27,6 +44,7 @@
 				is a <a href="/v2/docs/api#entity-menu">Menu entity</a>. E.g.
 			</p>
 
+			<pre><code>GET /v2/menus?source=test</code></pre>
 			<pre><code>{
 	"example-menu": {
 		"label": "Example Menu",
@@ -64,6 +82,23 @@
 				</table>
 			</div>
 
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Query Param</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>source</code></td>
+						<td>
+							<p>
+								A valid system code which identifies the application making this request.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<h4>Response</h4>
 
 			<p>
@@ -71,6 +106,7 @@
 				<a href="v2/docs/api#entities-menu">Menu entity</a>. E.g.
 			</p>
 
+			<pre><code>GET /v2/menus/example-menu?source=test</code></pre>
 			<pre><code>{
 	"label": "Example Menu",
 	"items": [
