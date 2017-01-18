@@ -6,8 +6,6 @@ Provides consistent navigation for FT applications. See [the production service]
 
 **:exclamation: If you need to edit the links that the Navigation Service provides, this isn't the right place – you need to edit files in the [Origami Navigation Data repo][navigation-data]**
 
-**:warning: This is V2 of the navigation service, and is currently in development. If you're looking for the code that's running in production, see the [V1 Navigation Service repo](https://github.com/Financial-Times/origami-navigation-service-v1)**
-
 [![Build status](https://img.shields.io/circleci/project/Financial-Times/origami-navigation-service.svg)][ci]
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 

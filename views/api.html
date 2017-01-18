@@ -20,6 +20,23 @@
 				the full menu structures.
 			</p>
 
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Query Param</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>source</code></td>
+						<td>
+							<p>
+								A valid system code which identifies the application making this request.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<h4>Response</h4>
 
 			<p>
@@ -27,6 +44,7 @@
 				is a <a href="/v2/docs/api#entity-menu">Menu entity</a>. E.g.
 			</p>
 
+			<pre><code>GET /v2/menus?source=test</code></pre>
 			<pre><code>{
 	"example-menu": {
 		"label": "Example Menu",
@@ -64,6 +82,23 @@
 				</table>
 			</div>
 
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Query Param</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>source</code></td>
+						<td>
+							<p>
+								A valid system code which identifies the application making this request.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<h4>Response</h4>
 
 			<p>
@@ -71,6 +106,7 @@
 				<a href="v2/docs/api#entities-menu">Menu entity</a>. E.g.
 			</p>
 
+			<pre><code>GET /v2/menus/example-menu?source=test</code></pre>
 			<pre><code>{
 	"label": "Example Menu",
 	"items": [
@@ -147,8 +183,8 @@
 						<td><code>label</code></td>
 						<td>
 							<p>
-								<code>String</code>.
-								The label to display when one is required.
+								<code>String</code> or <code>null</code>.
+								The label to display when one is required, or <code>null</code> if there is no label to display.
 							</p>
 						</td>
 					</tr>
@@ -156,8 +192,9 @@
 						<td><code>url</code></td>
 						<td>
 							<p>
-								<code>String</code>.
-								The URL that the menu item links to.
+								<code>String</code> or <code>null</code>.
+								The URL that the menu item links to, or <code>null</code> if there is no URL to link to. This
+								value may contain <a href="v2/docs/api#replacements">replacement patterns</a>.
 							</p>
 						</td>
 					</tr>
@@ -168,6 +205,34 @@
 								<code>Object</code> or <code>null</code>.
 								A <a href="v2/docs/api#entities-menu">Menu entity</a> representing
 								the submenu of this item, or <code>null</code> if there is no submenu.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h2 id="replacements">Replacement Patterns</h2>
+
+			<p>
+				Some URLs contain patterns that will need to be replaced before presenting to the user.
+				Replacement patterns always take the form: <code>${name}</code>.
+			</p>
+
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Pattern</th>
+						<th>Replacement</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>${currentPath}</code></td>
+						<td>Request path</td>
+						<td>
+							<p>
+								The <code>currentPath</code> pattern should be replaced with the path to
+								the current page. This is used in login URLs, for example, where the user
+								will be redirected back to the current page on successful login.
 							</p>
 						</td>
 					</tr>
