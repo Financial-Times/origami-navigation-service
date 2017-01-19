@@ -1,6 +1,7 @@
 {
 	"schemaVersion": 1,
 	"name": "origami-navigation-service",
+	"systemCode": "origami-navigation-service",
 	"purpose": "Provides consistent navigation for FT applications.",
 	"audience": "public",
 	"primaryUrl": "https://www.ft.com/__origami/service/navigation/v2",

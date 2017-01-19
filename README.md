@@ -53,6 +53,7 @@ Configuration
 
 We configure Origami Navigation Service using environment variables. In development, configurations are set in a `.env` file. In production, these are set through Heroku config. Further documentation on the available options can be found in the [Origami Service documentation][service-options].
 
+  * `GRAPHITE_API_KEY`: The FT's internal Graphite API key.
   * `PORT`: The port to run the application on.
   * `NAVIGATION_DATA_STORE`: The location of the JSON navigation data that powers the service. This should be a URL.
   * `NODE_ENV`: The environment to run the application in. One of `production`, `development` (default), or `test` (for use in automated tests).

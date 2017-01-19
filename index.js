@@ -11,7 +11,6 @@ const options = {
 	defaultLayout: 'main',
 	name: 'Origami Navigation Service',
 	navigationDataStore: process.env.NAVIGATION_DATA_STORE || 'https://www.ft.com/__origami/service/navigation-data',
-	systemCode: 'origami-navigation-service',
 	workers: process.env.WEB_CONCURRENCY || 1
 };
 
