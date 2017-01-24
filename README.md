@@ -59,6 +59,7 @@ We configure Origami Navigation Service using environment variables. In developm
   * `NODE_ENV`: The environment to run the application in. One of `production`, `development` (default), or `test` (for use in automated tests).
   * `REGION`: The region the application is running in.
   * `SENTRY_DSN`: The Sentry URL to send error information to.
+  * `TEST_HEALTHCHECK_FAILURE`: Set to `true` to fake failing health-checks.
 
 The service can also be configured by sending HTTP headers, these would normally be set in your CDN config:
 
