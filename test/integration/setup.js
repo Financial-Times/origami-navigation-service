@@ -24,7 +24,7 @@ before(function() {
 				environment: 'test',
 				log: mockLog,
 				navigationDataStore: this.mockStore.address,
-				port: process.env.PORT || null,
+				port: null,
 				requestLogFormat: null
 			}).listen();
 		})
