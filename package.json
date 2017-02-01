@@ -24,7 +24,7 @@
     "start": "heroku-node-settings index.js"
   },
   "dependencies": {
-    "@financial-times/origami-service": "^1.5.0",
+    "@financial-times/origami-service": "^1.6.0",
     "dotenv": "^2",
     "ft-poller": "^2.8.5",
     "heroku-node-settings": "^1.0.2",
