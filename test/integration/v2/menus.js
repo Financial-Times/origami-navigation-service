@@ -74,7 +74,7 @@ describe('GET /v2/menus/:nosourceparam', function() {
 		this.request.expect(response => {
 			assert.isString(response.text);
 			// Note: mock data can be found in ../mock/store.js
-			assert.include(response.text, 'The source parameter is required and should be a valid system code');
+			assert.include(response.text, 'The source parameter is required and must be a valid system code');
 		}).end(done);
 	});
 
