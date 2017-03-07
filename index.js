@@ -9,6 +9,7 @@ dotenv.load({
 });
 const options = {
 	defaultLayout: 'main',
+	log: console,
 	name: 'Origami Navigation Service',
 	navigationDataStore: process.env.NAVIGATION_DATA_STORE || 'https://www.ft.com/__origami/service/navigation-data',
 	testHealthcheckFailure: process.env.TEST_HEALTHCHECK_FAILURE || false,
