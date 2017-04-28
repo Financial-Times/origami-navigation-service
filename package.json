@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@financial-times/origami-service": "^2.0.0",
-    "@financial-times/source-param-middleware": "^1.0.1",
+    "@financial-times/source-param-middleware": "^1.0.2",
     "dotenv": "^2",
     "ft-poller": "^2.8.5",
     "heroku-node-settings": "^1.0.2",

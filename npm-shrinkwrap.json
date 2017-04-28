@@ -18,9 +18,9 @@
       "resolved": "https://registry.npmjs.org/@financial-times/origami-service/-/origami-service-2.0.0.tgz"
     },
     "@financial-times/source-param-middleware": {
-      "version": "1.0.1",
-      "from": "@financial-times/source-param-middleware@1.0.1",
-      "resolved": "https://registry.npmjs.org/@financial-times/source-param-middleware/-/source-param-middleware-1.0.1.tgz"
+      "version": "1.0.2",
+      "from": "@financial-times/source-param-middleware@1.0.2",
+      "resolved": "https://registry.npmjs.org/@financial-times/source-param-middleware/-/source-param-middleware-1.0.2.tgz"
     },
     "accepts": {
       "version": "1.3.3",
