@@ -15,5 +15,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - make change-request-qa
-      - make grafana-push
+      - make deploy
