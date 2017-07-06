@@ -53,13 +53,28 @@ Configuration
 
 We configure Origami Navigation Service using environment variables. In development, configurations are set in a `.env` file. In production, these are set through Heroku config. Further documentation on the available options can be found in the [Origami Service documentation][service-options].
 
-  * `GRAPHITE_API_KEY`: The FT's internal Graphite API key.
-  * `PORT`: The port to run the application on.
+### Required everywhere
+
   * `NAVIGATION_DATA_STORE`: The location of the JSON navigation data that powers the service. This should be a URL.
   * `NODE_ENV`: The environment to run the application in. One of `production`, `development` (default), or `test` (for use in automated tests).
-  * `REGION`: The region the application is running in.
+  * `PORT`: The port to run the application on.
+
+### Required in Heroku
+
+  * `CMDB_API_KEY`: The API key to use when performing CMDB operations
+  * `FASTLY_PURGE_API_KEY`: A Fastly API key which is used to purge URLs (when somebody POSTs to the `/purge` endpoint)
+  * `GRAPHITE_API_KEY`: The FT's internal Graphite API key.
+  * `PURGE_API_KEY`: The API key to require when somebody POSTs to the `/purge` endpoint. This should be a non-memorable string, for example a UUID
+  * `REGION`: The region the application is running in. One of `QA`, `EU`, or `US`
+  * `RELEASE_LOG_API_KEY`: The change request API key to use when creating and closing release logs
+  * `RELEASE_LOG_ENVIRONMENT`: The Salesforce environment to include in release logs. One of `Test` or `Production`
   * `SENTRY_DSN`: The Sentry URL to send error information to.
-  * `TEST_HEALTHCHECK_FAILURE`: Set to `true` to fake failing health-checks.
+
+### Required locally
+
+  * `GRAFANA_API_KEY`: The API key to use when using Grafana push/pull
+
+### Headers
 
 The service can also be configured by sending HTTP headers, these would normally be set in your CDN config:
 
@@ -71,7 +86,7 @@ Operational Documentation
 
 The source documentation for the [runbook](https://dewey.ft.com/origami-navigation-service.html) and [healthcheck](https://endpointmanager.in.ft.com/manage/origami-navigation-service-eu.herokuapp.com) [endpoints](https://endpointmanager.in.ft.com/manage/origami-navigation-service-us.herokuapp.com) are stored in the `operational-documentation` folder. These files are pushed to CMDB upon every promotion to production. You can push them to CMDB manually by running the following command:
 ```sh
-make update-cmdb
+make cmdb-update
 ```
 
 
@@ -106,10 +121,10 @@ Deployment
 
 The production ([EU][heroku-production-eu]/[US][heroku-production-us]) and [QA][heroku-qa] applications run on [Heroku]. We deploy continuously to QA via [CircleCI][ci], you should never need to deploy to QA manually. We use a [Heroku pipeline][heroku-pipeline] to promote QA deployments to production.
 
-You'll need to provide an API key for change request logging. You can get this from the Origami LastPass folder in the note named `Change Request API Keys`. Now deploy the last QA image by running the following:
+You can promote either through the Heroku interface, or by running the following command locally:
 
 ```sh
-CR_API_KEY=<API-KEY> make promote
+make promote
 ```
 
 
@@ -147,7 +162,7 @@ If you _really_ need to deploy manually, you should only do so to QA. Production
 You'll need to provide an API key for change request logging. You can get this from the Origami LastPass folder in the note named `Change Request API Keys`. Now deploy to QA using the following:
 
 ```sh
-CR_API_KEY=<API-KEY> make deploy
+make deploy
 ```
 
 
