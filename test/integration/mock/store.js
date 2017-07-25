@@ -7,6 +7,17 @@ module.exports = createMockStore;
 function createMockStore() {
 	const mockStore = express();
 
+	mockStore.get('/v2/links.json', (request, response) => {
+		response.send([
+			{
+				label: 'Link 1'
+			},
+			{
+				label: 'Link 2'
+			}
+		]);
+	});
+
 	mockStore.get('/v2/navigation.json', (request, response) => {
 		response.send({
 			menu1: {

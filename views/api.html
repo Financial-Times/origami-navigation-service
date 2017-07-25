@@ -58,7 +58,7 @@
 	}
 }</code></pre>
 
-			<h3 id="endpoints-get-v2-menus">GET /v2/menus/<var>:name</var></h3>
+			<h3 id="endpoints-get-v2-menus-name">GET /v2/menus/<var>:name</var></h3>
 
 			<p>
 				Fetch a single menu by name.
@@ -117,6 +117,45 @@
 		}
 	]
 }</code></pre>
+
+			<h3 id="endpoints-get-v2-links">GET /v2/links</h3>
+
+			<p>
+				Fetch all links that the Navigation Service provides as a flat array.
+			</p>
+
+			<div class="o-techdocs-table-wrapper">
+				<table>
+					<tr>
+						<th>Query Param</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td><code>source</code></td>
+						<td>
+							<p>
+								A valid system code which identifies the application making this request.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<h4>Response</h4>
+
+			<p>
+				Responds with a JSON array, where each item in the array is an
+				<a href="/v2/docs/api#entity-item">Item entity</a>. E.g.
+			</p>
+
+			<pre><code>GET /v2/links?source=test</code></pre>
+			<pre><code>[
+	{
+		"label": "Example Item",
+		"url": "http://example.com/",
+		"submenu": null
+	}
+]</code></pre>
 
 
 			<h2 id="entities">Entity Types</h2>

@@ -9,6 +9,7 @@ describe('lib/navigation-service', () => {
 	let about;
 	let basePath;
 	let healthChecks;
+	let linksData;
 	let navigationData;
 	let navigationService;
 	let origamiService;
@@ -25,6 +26,9 @@ describe('lib/navigation-service', () => {
 
 		healthChecks = require('../mock/health-checks.mock');
 		mockery.registerMock('./health-checks', healthChecks);
+
+		linksData = require('../mock/ft-poller.mock');
+		mockery.registerMock('./links-data', linksData);
 
 		navigationData = require('../mock/ft-poller.mock');
 		mockery.registerMock('./navigation-data', navigationData);
@@ -113,8 +117,20 @@ describe('lib/navigation-service', () => {
 			assert.calledWith(origamiService.mockApp.use, origamiService.middleware.errorHandler.firstCall.returnValue);
 		});
 
+		it('creates a links data poller', () => {
+			assert.called(linksData);
+			assert.calledWith(linksData, {
+				dataStore: options.navigationDataStore,
+				version: 2
+			});
+		});
+
+		it('sets the application `linksDataV2` property to the links data poller', () => {
+			assert.strictEqual(origamiService.mockApp.linksDataV2, linksData.mockPoller);
+		});
+
 		it('creates a navigation data poller', () => {
-			assert.calledOnce(navigationData);
+			assert.called(navigationData);
 			assert.calledWith(navigationData, {
 				dataStore: options.navigationDataStore,
 				version: 2
