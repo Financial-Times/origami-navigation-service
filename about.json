@@ -10,7 +10,7 @@
 	"apiVersions": [
 		{
 			"path": "/v1",
-			"supportStatus": "deprecated"
+			"supportStatus": "dead"
 		},
 		{
 			"path": "/v2",
@@ -86,7 +86,7 @@
 			"description": "Sentry dashboard (QA)"
 		},
 		{
-			"url": "https://financialtimes.splunkcloud.com/en-US/app/search/search?q=search%20(app%3Dorigami-navigation-v1-eu%20OR%20app%3Dorigami-navigation-v1-us)",
+			"url": "https://financialtimes.splunkcloud.com/en-US/app/search/search?q=search%20(app%3Dorigami-navigation-service-eu%20OR%20app%3Dorigami-navigation-service-us)",
 			"category": "monitoring",
 			"description": "Splunk (Production)"
 		}
