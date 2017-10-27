@@ -4,7 +4,7 @@
 	"protocol": "https",
 	"healthSuffix": "__health",
 	"aboutSuffix": "__about",
-	"isLive": "False",
+	"isLive": "True",
 	"isHealthcheckFor": {
 		"system": [{
 			"dataItemID": "origami-navigation-service"
