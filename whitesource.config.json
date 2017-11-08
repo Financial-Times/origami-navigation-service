@@ -1,0 +1,7 @@
+{
+	"checkPolicies": true,
+	"projectName": "origami-navigation-service",
+	"productName": "origami-navigation-service",
+	"devDep": false,
+	"failOnError": true
+}

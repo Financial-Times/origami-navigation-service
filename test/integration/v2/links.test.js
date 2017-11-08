@@ -5,8 +5,7 @@ const itRespondsWithContentType = require('../helpers/it-responds-with-content-t
 const itRespondsWithStatus = require('../helpers/it-responds-with-status');
 const setupRequest = require('../helpers/setup-request');
 
-describe('GET /v2/links', function() {
-
+describe('GET /v2/links', function () {
 	setupRequest('GET', '/v2/links?source=test');
 	itRespondsWithStatus(200);
 	itRespondsWithContentType('application/json');
