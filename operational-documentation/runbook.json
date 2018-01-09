@@ -9,39 +9,22 @@
 	"monitoring": "",
 	"primaryContact": {
 		"contact": [{
-			"dataItemID": "technicaloperations",
-			"name": "Technical Operations",
-			"contactType": "Team",
-			"slack": "techops",
-			"email": "technical.operations@ft.com",
-			"phone": "3001"
+			"dataItemID": "origamisupport"
 		}]
 	},
-	"secondaryContact": {
+	"programme": {
 		"contact": [{
-			"dataItemID": "origamisupport",
-			"name": "Origami team",
-			"contactType": "Team",
-			"slack": "ft-origami",
-			"email": "origami.support@ft.com"
+			"dataItemID": "internalproducts"
 		}]
 	},
 	"productOwner": {
 		"contact": [{
-			"dataItemID": "alicebartlett",
-			"name": "Alice Bartlett",
-			"contactType": "Person",
-			"slack": "ft-origami",
-			"email": "origami.support@ft.com"
+			"dataItemID": "origamisupport"
 		}]
 	},
 	"technicalLead": {
 		"contact": [{
-			"dataItemID": "alicebartlett",
-			"name": "Alice Bartlett",
-			"contactType": "Person",
-			"slack": "ft-origami",
-			"email": "origami.support@ft.com"
+			"dataItemID": "origamisupport"
 		}]
 	}
 }
