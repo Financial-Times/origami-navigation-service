@@ -24,7 +24,7 @@ before(function() {
 				environment: 'test',
 				log: mockLog,
 				navigationDataStore: this.mockStore.address,
-				port: null,
+				port: 0,
 				requestLogFormat: null
 			}).listen();
 		})
@@ -35,6 +35,6 @@ before(function() {
 });
 
 after(function() {
-	this.app.origami.server.close();
+	this.app.ft.server.close();
 	this.mockStore.server.close();
 });
