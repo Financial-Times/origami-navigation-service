@@ -1,51 +1,38 @@
+<h1>API Reference</h1>
 
-<div class="o-techdocs-container">
-	<div class="o-techdocs-layout">
+<h2 id="endpoints">Endpoints</h2>
 
-		<div class="o-techdocs-sidebar">
-			{{>navigation}}
-		</div>
+<h3 id="endpoints-get-v2-menus">GET /v2/menus</h3>
 
-		<div class="o-techdocs-main o-techdocs-content">
+<p>
+	Fetch all menus that the Navigation Service provides links for, including
+	the full menu structures.
+</p>
 
-			<h1>API Reference</h1>
-
-
-			<h2 id="endpoints">Endpoints</h2>
-
-			<h3 id="endpoints-get-v2-menus">GET /v2/menus</h3>
-
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Query Param</th>
+		<td><code>source</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
 			<p>
-				Fetch all menus that the Navigation Service provides links for, including
-				the full menu structures.
+				A valid system code which identifies the application making this request.
 			</p>
+		</td>
+	</tr>
+</table>
 
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Query Param</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>source</code></td>
-						<td>
-							<p>
-								A valid system code which identifies the application making this request.
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
+<h4>Response</h4>
 
-			<h4>Response</h4>
+<p>
+	Responds with a JSON object, where each property is the name of a menu and each value
+	is a <a href="/v2/docs/api#entity-menu">Menu entity</a>. E.g.
+</p>
 
-			<p>
-				Responds with a JSON object, where each property is the name of a menu and each value
-				is a <a href="/v2/docs/api#entity-menu">Menu entity</a>. E.g.
-			</p>
-
-			<pre><code>GET /v2/menus?source=test</code></pre>
-			<pre><code>{
+<pre><code class="o-syntax-highlight--bash">GET /v2/menus?source=test</code></pre>
+<pre><code class="o-syntax-highlight--json">{
 	"example-menu": {
 		"label": "Example Menu",
 		"items": [
@@ -58,56 +45,52 @@
 	}
 }</code></pre>
 
-			<h3 id="endpoints-get-v2-menus-name">GET /v2/menus/<var>:name</var></h3>
+<h3 id="endpoints-get-v2-menus-name">GET /v2/menus/<var>:name</var></h3>
 
+<p>
+	Fetch a single menu by name.
+</p>
+
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Param</th>
+		<td><code>name</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
 			<p>
-				Fetch a single menu by name.
+				The name of the menu being fetched. This should reference an existing menu in the
+				<a href="https://github.com/Financial-Times/origami-navigation-data">Navigation Data repo</a>
 			</p>
+		</td>
+	</tr>
+</table>
 
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Param</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>name</code></td>
-						<td>
-							<p>
-								The name of the menu being fetched. This should reference an existing menu in the
-								<a href="https://github.com/Financial-Times/origami-navigation-data">Navigation Data repo</a>
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Query Param</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>source</code></td>
-						<td>
-							<p>
-								A valid system code which identifies the application making this request.
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<h4>Response</h4>
-
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Query Param</th>
+		<td><code>source</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
 			<p>
-				Responds with a JSON object representing the requested menu. This will be a
-				<a href="v2/docs/api#entities-menu">Menu entity</a>. E.g.
+				A valid system code which identifies the application making this request.
 			</p>
+		</td>
+	</tr>
+</table>
 
-			<pre><code>GET /v2/menus/example-menu?source=test</code></pre>
-			<pre><code>{
+<h4>Response</h4>
+
+<p>
+	Responds with a JSON object representing the requested menu. This will be a
+	<a href="v2/docs/api#entities-menu">Menu entity</a>. E.g.
+</p>
+
+<pre><code class="o-syntax-highlight--bash">GET /v2/menus/example-menu?source=test</code></pre>
+<pre><code class="o-syntax-highlight--json">{
 	"label": "Example Menu",
 	"items": [
 		{
@@ -118,38 +101,36 @@
 	]
 }</code></pre>
 
-			<h3 id="endpoints-get-v2-links">GET /v2/links</h3>
+<h3 id="endpoints-get-v2-links">GET /v2/links</h3>
 
+<p>
+	Fetch all links that the Navigation Service provides as a flat array.
+</p>
+
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Query Param</th>
+		<td><code>source</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
 			<p>
-				Fetch all links that the Navigation Service provides as a flat array.
+				A valid system code which identifies the application making this request.
 			</p>
+		</td>
+	</tr>
+</table>
 
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Query Param</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>source</code></td>
-						<td>
-							<p>
-								A valid system code which identifies the application making this request.
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
+<h4>Response</h4>
 
-			<h4>Response</h4>
+<p>
+	Responds with a JSON array, where each item in the array is an
+	<a href="/v2/docs/api#entity-item">Item entity</a>. E.g.
+</p>
 
-			<p>
-				Responds with a JSON array, where each item in the array is an
-				<a href="/v2/docs/api#entity-item">Item entity</a>. E.g.
-			</p>
-
-			<pre><code>GET /v2/links?source=test</code></pre>
-			<pre><code>[
+<pre><code class="o-syntax-highlight--bash">GET /v2/links?source=test</code></pre>
+<pre><code class="o-syntax-highlight--json">[
 	{
 		"label": "Example Item",
 		"url": "http://example.com/",
@@ -158,127 +139,112 @@
 ]</code></pre>
 
 
-			<h2 id="entities">Entity Types</h2>
+<h2 id="entities">Entity Types</h2>
 
-			<h3 id="entities-menu">Menu</h3>
+<h3 id="entities-menu">Menu</h3>
 
-			<p>
-				A Menu entity represents a navigation menu and can contain multiple
-				<a href="v2/docs/api#entities-item">Item entities</a>.
-			</p>
+<p>
+	A Menu entity represents a navigation menu and can contain multiple
+	<a href="v2/docs/api#entities-item">Item entities</a>.
+</p>
 
-			<pre><code>{
+<pre><code class="o-syntax-highlight--json">{
 	"label": "Example Menu",
 	"items": []
 }</code></pre>
 
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Property</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>label</code></td>
-						<td>
-							<p>
-								<code>String</code>.
-								The label to display when one is required.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td><code>items</code></td>
-						<td>
-							<p>
-								<code>Array</code>.
-								An array of <a href="v2/docs/api#entities-item">Item entities</a>
-								that the menu contains.
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<h3 id="entities-item">Item</h3>
-
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Property</th>
+		<td><code>label</code></td>
+		<td><code>items</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
 			<p>
-				An Item entity represents a single navigation item and any submenus that it may have.
+				<code>String</code>.
+				The label to display when one is required.
 			</p>
+		</td>
+		<td>
+			<p>
+				<code>Array</code>.
+				An array of <a href="v2/docs/api#entities-item">Item entities</a>
+				that the menu contains.
+			</p>
+		</td>
+	</tr>
+</table>
 
-			<pre><code>{
+<h3 id="entities-item">Item</h3>
+
+<p>
+	An Item entity represents a single navigation item and any submenus that it may have.
+</p>
+
+<pre><code class="o-syntax-highlight--json">{
 	"label": "Example Item",
 	"url": "http://example.com/",
 	"submenu": null
 }</code></pre>
 
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Property</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>label</code></td>
-						<td>
-							<p>
-								<code>String</code> or <code>null</code>.
-								The label to display when one is required, or <code>null</code> if there is no label to display.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td><code>url</code></td>
-						<td>
-							<p>
-								<code>String</code> or <code>null</code>.
-								The URL that the menu item links to, or <code>null</code> if there is no URL to link to. This
-								value may contain <a href="v2/docs/api#replacements">replacement patterns</a>.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td><code>submenu</code></td>
-						<td>
-							<p>
-								<code>Object</code> or <code>null</code>.
-								A <a href="v2/docs/api#entities-menu">Menu entity</a> representing
-								the submenu of this item, or <code>null</code> if there is no submenu.
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<h2 id="replacements">Replacement Patterns</h2>
-
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Property</th>
+		<td><code>label</code></td>
+		<td><code>url</code></td>
+		<td><code>submenu</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
 			<p>
-				Some URLs contain patterns that will need to be replaced before presenting to the user.
-				Replacement patterns always take the form: <code>${name}</code>.
+				<code>String</code> or <code>null</code>.
+				The label to display when one is required, or <code>null</code> if there is no label to display.
 			</p>
+		</td>
+		<td>
+			<p>
+				<code>String</code> or <code>null</code>.
+				The URL that the menu item links to, or <code>null</code> if there is no URL to link to. This
+				value may contain <a href="v2/docs/api#replacements">replacement patterns</a>.
+			</p>
+		</td>
+		<td>
+			<p>
+				<code>Object</code> or <code>null</code>.
+				A <a href="v2/docs/api#entities-menu">Menu entity</a> representing
+				the submenu of this item, or <code>null</code> if there is no submenu.
+			</p>
+		</td>
+	</tr>
+</table>
 
-			<div class="o-techdocs-table-wrapper">
-				<table>
-					<tr>
-						<th>Pattern</th>
-						<th>Replacement</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td><code>${currentPath}</code></td>
-						<td>Request path</td>
-						<td>
-							<p>
-								The <code>currentPath</code> pattern should be replaced with the path to
-								the current page. This is used in login URLs, for example, where the user
-								will be redirected back to the current page on successful login.
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
+<h2 id="replacements">Replacement Patterns</h2>
 
-		</div>
+<p>
+	Some URLs contain patterns that will need to be replaced before presenting to the user.
+	Replacement patterns always take the form: <code>${name}</code>.
+</p>
 
-	</div>
-</div>
+<table class="o-table o-table--row-headings o-layout__main__single-span" data-o-component="o-table">
+	<tr>
+		<th scope="row">Pattern</th>
+		<td>Request path</td>
+	</tr>
+	<tr>
+		<th scope="row">Replacement</th>
+		<td><code>${currentPath}</code></td>
+	</tr>
+	<tr>
+		<th scope="row">Description</th>
+		<td>
+			<p>
+				The <code>currentPath</code> pattern should be replaced with the path to
+				the current page. This is used in login URLs, for example, where the user
+				will be redirected back to the current page on successful login.
+			</p>
+		</td>
+	</tr>
+</table>

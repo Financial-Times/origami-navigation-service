@@ -32,9 +32,12 @@
 			.o-layout__header .o-header-services__top .o-header-services__ftlogo {
 				background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:origami?source=origami-build-service");
 			}
+			.o-table--row-headings tbody th {
+				width: 100px;
+			}
 		</style>
 
-		<link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-layout@^2.0.1,o-fonts@^3.0.4,o-syntax-highlight@^1.5.1" />
+		<link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-layout@^2.0.1,o-fonts@^3.0.4,o-syntax-highlight@^1.5.1,o-table@^6.9.2&brand=internal" />
 		<link rel="stylesheet" href="main.css" />
 		<script src="https://polyfill.io/v2/polyfill.min.js?features=fetch,default"></script>
 		<script>
@@ -59,7 +62,7 @@
 			</div>
 
 			<div class="o-layout__main">
-				<!-- {{{body}}} -->
+				{{{body}}}
 			</div>
 
 			{{> footer}}
