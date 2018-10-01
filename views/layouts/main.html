@@ -50,30 +50,20 @@
 		<script src="main.js"></script>
 
 	</head>
-	<body class="o-techdocs">
+	<body data-o-component="o-syntax-highlight">
+		<div class="o-layout" data-o-component="o-layout">
+			{{> header}}
 
-		<header data-o-component="o-header" class="o-header">
-			<div class="o-header__container">
-				<div class="o-header__primary">
-					<div class="o-header__primary__left">
-						<a href="/">
-							<span class="origami-logo">
-							</span>
-							<h1 class="o-header__title">Origami Navigation Service</h1>
-						</a>
-					</div>
-				</div>
-				<div class="o-header__secondary"></div>
+			<div class="o-layout__sidebar">
+				<!-- for automatically generated navigation -->
 			</div>
-		</header>
 
-		{{{body}}}
-
-		<footer class="o-techdocs-footer">
-			<div class="o-techdocs-footer__inner">
-				<p>&copy; THE FINANCIAL TIMES LTD. FT and 'Financial Times' are trademarks of The Financial Times Ltd.</p>
+			<div class="o-layout__main">
+				<!-- {{{body}}} -->
 			</div>
-		</footer>
 
+			{{> footer}}
+
+		</div>
 	</body>
 </html>
