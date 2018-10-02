@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>{{title}}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<base href="{{basePath}}" />
 
 	<script>
 		var script = document.createElement('script');
@@ -28,25 +29,30 @@
 		body {
 			margin: 0;
 		}
+		div.o-layout__sidebar .o-layout__navigation li a[aria-current=location] {
+			background-color: transparent;
+		}
 	</style>
 
 	<script src="https://polyfill.io/v2/polyfill.min.js?features=fetch,default"></script>
-	<link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-header@^6.12.3,o-footer@^5.3.1,o-techdocs@^6.1.3" />
-	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-header@7.5.13,o-footer@^6.0.10,o-grid@^4.4.4,o-typography@^5.7.5" />
 	<script>
 		(function(src) {
-			if (cutsTheMustard) {
-				var o = document.createElement('script');
-				o.async = o.defer = true;
-				o.src = src;
+			if (window.cutsTheMustard) {
+				script.async = script.defer = true;
+				script.src = src;
 				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(o, s);
+				s.parentNode.insertBefore(script, s);
 			}
-		}('https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-header@^6.12.3,o-footer@^5.3.1'));
+		}('https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-grid@^4.4.4,o-header@7.5.13'));
 	</script>
 
 </head>
 <body>
+	{{> example/header}}
+
 	{{{body}}}
+
+	{{> example/footer}}
 </body>
 </html>
