@@ -102,7 +102,7 @@ See the live service for more information on how to use.
 
 There are a few things you can try before contacting the Origami team:
 
-1. Verify that GitHub and S3 are up. Either of these being down could cause downtime for this application. See [GitHub's status page](https://www.githubstatus.com/) and the [Navigation Data's `__gtg` endpoint](https://www.ft.com/__origami/service/navigation-data/__gtg).
+1. Verify that S3 is up. See [Navigation Data's `__gtg` endpoint](https://www.ft.com/__origami/service/navigation-data/__gtg).
 2. Restart all of the dynos across the production EU and US Heroku apps ([pipeline here](https://dashboard.heroku.com/pipelines/17603799-00d6-4e45-af5c-c21fb88321aa))
 
 ## Second Line Troubleshooting
