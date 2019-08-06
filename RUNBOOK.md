@@ -2,10 +2,6 @@
 
 Provides consistent navigation for FT applications.
 
-## Code
-
-origami-navigation-service
-
 ## Service Tier
 
 Platinum
