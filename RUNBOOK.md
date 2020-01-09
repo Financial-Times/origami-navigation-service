@@ -117,14 +117,12 @@ If only a few things aren't working, the Splunk logs (see monitoring) are the be
 
 ## Monitoring
 
-* [Grafana dashboard][grafana]: graph memory, load, and number of requests
 * [Pingdom check (Production EU)][pingdom-eu]: checks that the EU production app is responding
 * [Pingdom check (Production US)][pingdom-us]: checks that the US production app is responding
 * [Sentry dashboard (Production)][sentry-production]: records application errors in the production app
 * [Sentry dashboard (QA)][sentry-qa]: records application errors in the QA app
 * [Splunk (Production)][splunk]: query application logs
 
-[grafana]: http://grafana.ft.com/dashboard/db/origami-navigation-service
 [pingdom-eu]: https://my.pingdom.com/newchecks/checks#check=2287222
 [pingdom-us]: https://my.pingdom.com/newchecks/checks#check=2287223
 [sentry-production]: https://sentry.io/nextftcom/origami-navigation-service-pro/
