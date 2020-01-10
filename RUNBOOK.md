@@ -102,7 +102,6 @@ See the live service for more information on how to use.
 
 There are a few things you can try before contacting the Origami team:
 
-1. Verify that S3 is up. You can do this by ensuring that [Navigation Data's endpoints](https://origami-navigation-data.in.ft.com/v2/navigation.json) respond with a `200` status.
 2. Restart all of the dynos across the production EU and US Heroku apps ([pipeline here](https://dashboard.heroku.com/pipelines/17603799-00d6-4e45-af5c-c21fb88321aa))
 
 ## Second Line Troubleshooting
@@ -149,4 +148,3 @@ This service uses two keys:
 2. AWS (read/write permissions for a single S3 bucket)
 
 The process for rotating these keys is manual, via the GitHub and AWS interfaces.
-
