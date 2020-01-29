@@ -16,8 +16,8 @@
     "url": "https://github.com/Financial-Times/origami-navigation-service.git"
   },
   "engines": {
-    "node": "^8.6.0",
-    "npm": "^5"
+    "node": "^10",
+    "npm": "^6"
   },
   "main": "./lib/navigation-service.js",
   "scripts": {
