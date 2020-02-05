@@ -1,23 +1,85 @@
-version: 2
+version: 2.1
+
+orbs:
+    change-api: financial-times/change-api@0.25.0
+
+
 jobs:
-  test:
-    working_directory: ~/service
+  deploy_staging:
     docker:
-      - image: node:10
+      - image: circleci/node:10
     steps:
       - checkout
-      - run: npm install
-      - run:
-          name: Run linters
-          command: make verify
-      - run:
-          name: Run unit tests
-          command: make test-unit-coverage
-      - run:
-          name: Run integration tests
-          command: make test-integration
+      - run: npm ci
+      - run: ~/project/.circleci/create_netrc_file.sh
+      - run: git push https://git.heroku.com/origami-navigation-service-qa.git HEAD:master --force
+
+  deploy_service_production:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: npm ci
+      - run: sudo ~/project/.circleci/install_heroku.sh
+      - run: ~/project/.circleci/create_netrc_file.sh
+      - run: heroku pipelines:promote --app origami-navigation-service-qa --to origami-navigation-service-eu,origami-navigation-service-us
+
+  lint:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: npm ci
+      - run: make verify
+
+  unit_tests:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run: npm ci
+      - run: make test-unit-coverage
+      - run: make test-integration
+
 workflows:
   version: 2
   test:
     jobs:
-      - test
+      - lint
+      - unit_tests
+      - deploy_staging:
+          filters:
+            tags:
+              ignore: /^v.*/
+            branches:
+              only:
+               - master
+      - change-api/release-log:
+          requires:
+            - deploy_staging
+          systemCode: 'origami-navigation-service'
+          environment: 'test'
+          slackChannels: 'origami-deploys'
+          filters:
+            tags:
+              ignore: /^v.*/
+            branches:
+              only:
+               - master
+      - deploy_service_production:
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - change-api/release-log:
+          requires:
+            - deploy_service_production
+          systemCode: 'origami-navigation-service'
+          environment: 'prod'
+          slackChannels: 'origami-deploys'
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
