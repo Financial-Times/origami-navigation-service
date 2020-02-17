@@ -35,7 +35,7 @@
     "heroku-node-settings": "^1.0.2",
     "http-errors": "^1",
     "request": "^2.88.0",
-    "require-all": "^2",
+    "require-all": "^3",
     "statuses": "^1",
     "throng": "^4.0.0"
   },
