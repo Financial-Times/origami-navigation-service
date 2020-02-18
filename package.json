@@ -31,7 +31,7 @@
     "@financial-times/source-param-middleware": "^1.0.6",
     "dotenv": "^2",
     "express": "^4.16.0",
-    "ft-poller": "^2.9.4",
+    "ft-poller": "^3.0.1",
     "heroku-node-settings": "^1.0.2",
     "http-errors": "^1",
     "request": "^2.88.0",
