@@ -29,7 +29,7 @@
     "@financial-times/origami-service": "^4.1.0",
     "@financial-times/origami-service-makefile": "^7.0.0",
     "@financial-times/source-param-middleware": "^1.0.6",
-    "dotenv": "^2",
+    "dotenv": "^8",
     "express": "^4.16.0",
     "ft-poller": "^2.9.4",
     "heroku-node-settings": "^1.0.2",
