@@ -159,12 +159,11 @@ If this doesn't help, then a temporary measure could be to add more dynos to the
 
 If you _really_ need to deploy manually, you should only do so to QA. Production deploys should always be a promotion from QA.
 
-You'll need to provide an API key for change request logging. You can get this from the Origami LastPass folder in the note named `Change Request API Keys`. Now deploy to QA using the following:
+You'll need to provide an API key for change request logging. You can get this from Vault in `teams/origami/navigation-service`. Now deploy to QA using the following:
 
 ```sh
 make deploy
 ```
-
 
 License
 -------
