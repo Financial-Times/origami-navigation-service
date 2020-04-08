@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/* Additional CSS for the documentation */
-
-.example-content {
-	padding: 2em
-}
-
 /* Header overrides */
 
 .o-header-services__logo {
