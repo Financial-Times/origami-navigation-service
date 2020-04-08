@@ -5,3 +5,9 @@
 .example-content {
 	padding: 2em
 }
+
+/* Header overrides */
+
+.o-header-services__logo {
+	background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:origami?format=svg&source=origami&width=55);
+}
