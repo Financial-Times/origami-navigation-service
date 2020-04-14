@@ -7,10 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-    - run: npm ci
-    - run: sudo ~/project/.circleci/install_heroku.sh
-      - run: ~/project/.circleci/create_netrc_file.sh
-      - run: heroku pipelines:promote --app origami-navigation-service-qa --to origami-navigation-service-eu,origami-navigation-service-us
+    - run: ~/project/.circleci/create_netrc_file.sh
+    - run: git push https://git.heroku.com/origami-navigation-service-eu.git HEAD:master --force
+    - run: git push https://git.heroku.com/origami-navigation-service-us.git HEAD:master --force
