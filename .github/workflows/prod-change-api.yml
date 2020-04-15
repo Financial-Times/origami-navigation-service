@@ -1,5 +1,7 @@
+name: Create new change log
 on:
-  release: [created]
+  release:
+    types: [created]
 
 jobs:
   make-change-log:
