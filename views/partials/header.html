@@ -1,23 +1,27 @@
-<header class="o-header-services o-layout__header" data-o-component="o-header">
-	<div class="o-header-services__top o-header-services__container">
-			<div class="o-header-services__ftlogo"></div>
-			<div class="o-header-services__title">
-				<h1 class="o-header-services__product-name">
-					<a href="/">Origami Navigation Service</a>
-				</h1>
-			</div>
-	</div>
-	<nav class="o-header-services__primary-nav">
-		<div class="o-header-services__container">
-			<ul class="o-layout__primary-nav o-header-services__nav-list">
-				{{#navigation.items}}
-					<li class="o-header-services__nav-item">
-						<a class="o-header-services__nav-link {{#current}}o-header-services__nav-link--selected{{/current}}" href="{{@root.basePath}}{{href}}">
-							{{name}}
-						</a>
-					</li>
-				{{/navigation.items}}
-			</ul>
+<header class="o-header-services" data-o-component="o-header-services">
+
+	<div class="o-header-services__top">
+		<div class="o-header-services__hamburger">
+			<a class="o-header-services__hamburger-icon" href="#" role="button">
+				<span class="o-header-services__visually-hidden">Open primary navigation</span>
+			</a>
 		</div>
+		<div class="o-header-services__logo"></div>
+		<div class="o-header-services__title">
+			<a class="o-header-services__product-name" href="/">Origami Navigation Service</a>
+		</div>
+	</div>
+
+	<nav class="o-header-services__primary-nav" aria-label="primary">
+		<ul class="o-header-services__primary-nav-list">
+			{{#navigation.items}}
+				<li>
+					<a href="{{@root.basePath}}{{href}}" {{#current}}aria-current="true"{{/current}}>
+						{{name}}
+					</a>
+				</li>
+			{{/navigation.items}}
+		</ul>
 	</nav>
+
 </header>

@@ -1,0 +1,49 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{{title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script>
+	var script = document.createElement('script');
+	var supportsDeferredScripts = "defer" in script && "async" in script;
+	window.cutsTheMustard = (typeof document.documentElement.dataset === 'object' && ('visibilityState' in document) && supportsDeferredScripts);
+
+	if (window.cutsTheMustard) {
+		document.documentElement.classList.replace('core', 'enhanced');
+	}
+</script>
+
+<style>
+	.core .o--if-js,
+	.enhanced .o--if-no-js {
+		display: none !important;
+	}
+	html {
+		font-family: BentonSans, sans-serif;
+		overflow-x: hidden;
+	}
+	body {
+		margin: 0;
+	}
+	.o-layout__header .o-header-services__top .o-header-services__ftlogo {
+		background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:origami?source=origami-build-service");
+	}
+	.o-table--row-headings tbody th {
+		width
+	}
+</style>
+
+<link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-layout@^4.1.6,o-fonts@^4.3.2,o-syntax-highlight@^3.0.1,o-table@^8.0.5,o-header-services@^4.0.3,o-footer-services@^3.0.2&brand=internal" />
+<link rel="stylesheet" href="{{@root.basePath}}main.css" />
+<script src="https://polyfill.io/v2/polyfill.min.js?features=fetch,default"></script>
+<script>
+	(function(src) {
+		if (window.cutsTheMustard) {
+			script.async = script.defer = true;
+			script.src = src;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(script, s);
+		}
+	}('https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-layout@^4.1.6,o-fonts@^4.3.2,o-syntax-highlight@^3.0.1,o-table@^8.0.5,o-header-services@^4.0.3,o-footer-services@^3.0.2'));
+</script>
+<script src="{{@root.basePath}}main.js"></script>

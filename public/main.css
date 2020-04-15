@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-/* Additional CSS for the documentation */
+/* Header overrides */
 
-.example-content {
-	padding: 2em
+.o-header-services__logo {
+	background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:origami?format=svg&source=origami&width=55);
 }
