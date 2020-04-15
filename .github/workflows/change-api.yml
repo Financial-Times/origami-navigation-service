@@ -1,0 +1,86 @@
+name: Make a curl request to Change API
+on:
+  release:
+    types: [created]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Validate user input and make a cURL request to Change API
+      env:
+        # Enter the x-api-key header value for authenticating the request to Change API.
+        # Create a key by following the instructions here
+        # https://docs.google.com/document/d/1Ju84f1jtAmxmHtsyGfcyxdG3ZWrhuN9GrNnBxjVWhi4/edit
+        CHANGE_API_KEY: ${{ secrets.CHANGE_API_KEY }}
+        # Enter the systemcode of the system being changed. Defaults to the repository name.
+        SYSTEM_CODE: $CIRCLE_PROJECT_REPONAME
+        # Enter the environment in which the system is being changed.
+        ENVIRONMENT: "unknown"
+        # Enter the GitHub username of the person making the change.
+        GITHUB_NAME: $CIRCLE_USERNAME
+        # Enter the systemcode of the system making the change.
+        CHANGE_MADE_BY_SYSTEM: "github"
+        # Enter comma-separated list of Slack channel names for notifications.
+        SLACK_CHANNELS: "ft-changes-test"
+        # Enter the Git commit SHA-1 hash.
+        GIT_COMMIT: $CIRCLE_SHA1
+        # Enter the name of the GitHub repository which is being changed.
+        # Defaults to the CircleCI built-in variables.
+        # https://circleci.com/docs/2.0/env-vars/#built-in-environment-variables
+        GIT_REPOSITORY_NAME: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+        # Enter the Github release tag if it exists.
+        # Defaults to the CircleCI built-in variable.
+        # https://circleci.com/docs/2.0/env-vars/#built-in-environment-variables
+        GIT_RELEASE_TAG: $CIRCLE_TAG
+
+        # Enter a valid json payload, e.g. {"cluster":"eu"}.
+        EXTRA_PROPERTIES: '{}'
+      run: |
+        # Show an error if no system API key found in the environment. Otherwise, continue
+        if [ -z "<< parameters.changeApiKey >>" ]; then
+          echo "No API key provided"
+          echo "Please set CHANGE_API_KEY as an environment variable in the settings for your project."
+          exit 1
+        else
+          # Validate user input
+          SLACK_CHANNELS=$(echo '"$SLACK_CHANNELS"' | jq 'split(",")' )
+          echo $SLACK_CHANNELS
+          if jq -e . >/dev/null 2>&1 \<<< "$EXTRA_PROPERTIES"; then
+            echo "Parsed JSON for extraProperties successfully"
+          else
+            echo "Failed to parse JSON for extraProperties. Please ensure you are providing valid JSON. See examples/generate.yml"
+            exit 1
+          fi
+        fi
+
+        URL='https://api.ft.com/change-log/v1/create'
+        jq -n \
+        --argjson extraProps "$EXTRA_PROPERTIES"  \
+        --arg ghName "$GITHUB_NAME" \
+        --arg sysCode "$SYSTEM_CODE" \
+        --arg env "$ENVIRONMENT" \
+        --argjson channels "$SLACK_CHANNELS" \
+        --arg gitRepoName "$GIT_REPOSITORY_NAME" \
+        --arg gitReleaseTag "$GIT_RELEASE_TAG" \
+        --arg systemMakingChange "$CHANGE_MADE_BY_SYSTEM" \
+        --arg commitHash "$GIT_COMMIT" \
+        '{
+          user: {
+            githubName: $ghName
+          },
+          systemCode: $sysCode,
+          environment: $env,
+          notifications: {
+            slackChannels: $channels
+          },
+          gitRepositoryName: $gitRepoName,
+          gitReleaseTag: $gitReleaseTag,
+          changeMadeBySystem: $systemMakingChange,
+          commit: $commitHash,
+          extraProperties: $extraProps
+        }' > request.json
+
+        echo "Sending request: $(cat request.json)"
+
+        curl -X POST $URL -H "Content-Type: application/json" -H "x-api-key: ${CHANGE_API_KEY}" --data @request.json
