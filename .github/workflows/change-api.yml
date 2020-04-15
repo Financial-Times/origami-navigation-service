@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - run: sudo apt-get install jq
     - name: Validate user input and make a cURL request to Change API
       env:
         # Enter the x-api-key header value for authenticating the request to Change API.
