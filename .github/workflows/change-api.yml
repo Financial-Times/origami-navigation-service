@@ -14,27 +14,14 @@ jobs:
         # Create a key by following the instructions here
         # https://docs.google.com/document/d/1Ju84f1jtAmxmHtsyGfcyxdG3ZWrhuN9GrNnBxjVWhi4/edit
         CHANGE_API_KEY: ${{ secrets.CHANGE_API_KEY }}
-        # Enter the systemcode of the system being changed. Defaults to the repository name.
-        SYSTEM_CODE: $CIRCLE_PROJECT_REPONAME
+        # Enter the systemcode of the system being changed.
+        SYSTEM_CODE: "origami-navigation-service"
         # Enter the environment in which the system is being changed.
-        ENVIRONMENT: "unknown"
-        # Enter the GitHub username of the person making the change.
-        GITHUB_NAME: $CIRCLE_USERNAME
+        ENVIRONMENT: "prod"
         # Enter the systemcode of the system making the change.
         CHANGE_MADE_BY_SYSTEM: "github"
         # Enter comma-separated list of Slack channel names for notifications.
-        SLACK_CHANNELS: "ft-changes-test"
-        # Enter the Git commit SHA-1 hash.
-        GIT_COMMIT: $CIRCLE_SHA1
-        # Enter the name of the GitHub repository which is being changed.
-        # Defaults to the CircleCI built-in variables.
-        # https://circleci.com/docs/2.0/env-vars/#built-in-environment-variables
-        GIT_REPOSITORY_NAME: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
-        # Enter the Github release tag if it exists.
-        # Defaults to the CircleCI built-in variable.
-        # https://circleci.com/docs/2.0/env-vars/#built-in-environment-variables
-        GIT_RELEASE_TAG: $CIRCLE_TAG
-
+        SLACK_CHANNELS: "ft-changes-test,origami-deploys"
         # Enter a valid json payload, e.g. {"cluster":"eu"}.
         EXTRA_PROPERTIES: '{}'
       run: |
@@ -58,14 +45,14 @@ jobs:
         URL='https://api.ft.com/change-log/v1/create'
         jq -n \
         --argjson extraProps "$EXTRA_PROPERTIES"  \
-        --arg ghName "$GITHUB_NAME" \
+        --arg ghName "$GITHUB_ACTOR" \
         --arg sysCode "$SYSTEM_CODE" \
         --arg env "$ENVIRONMENT" \
         --argjson channels "$SLACK_CHANNELS" \
-        --arg gitRepoName "$GIT_REPOSITORY_NAME" \
-        --arg gitReleaseTag "$GIT_RELEASE_TAG" \
+        --arg gitRepoName "$GITHUB_REPOSITORY" \
+        --arg gitReleaseTag "${GITHUB_REF/refs\/tags\//}" \
         --arg systemMakingChange "$CHANGE_MADE_BY_SYSTEM" \
-        --arg commitHash "$GIT_COMMIT" \
+        --arg commitHash "$GITHUB_SHA" \
         '{
           user: {
             githubName: $ghName
