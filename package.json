@@ -21,7 +21,9 @@
   },
   "main": "./lib/navigation-service.js",
   "scripts": {
-    "start": "heroku-node-settings index.js"
+    "start": "heroku-node-settings index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@financial-times/health-check": "^1.11.3",
@@ -36,7 +38,8 @@
     "request": "^2.88.2",
     "require-all": "^3",
     "statuses": "^2",
-    "throng": "^4.0.0"
+    "throng": "^4.0.0",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "@financial-times/grafana-tools": "^1.0.6",
@@ -49,5 +52,6 @@
     "sinon": "^1",
     "sinon-as-promised": "^4",
     "supertest": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
