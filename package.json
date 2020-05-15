@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@financial-times/grafana-tools": "^1.0.6",
-    "eslint": "^6",
+    "eslint": "^7",
     "istanbul": "^0.4",
     "mocha": "^2",
     "mockery": "^2",
