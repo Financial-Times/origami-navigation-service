@@ -29,7 +29,7 @@
     "@financial-times/health-check": "^2.0.0",
     "@financial-times/origami-service": "^4.1.2",
     "@financial-times/origami-service-makefile": "^7.0.3",
-    "@financial-times/source-param-middleware": "^1.0.8",
+    "@financial-times/source-param-middleware": "^2.0.0",
     "dotenv": "^8",
     "express": "^4.17.1",
     "ft-poller": "^3.0.1",
