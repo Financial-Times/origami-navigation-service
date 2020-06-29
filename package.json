@@ -39,7 +39,7 @@
     "require-all": "^3",
     "statuses": "^2",
     "throng": "^4.0.0",
-    "snyk": "^1.345.1"
+    "snyk": "^1.350.0"
   },
   "devDependencies": {
     "@financial-times/grafana-tools": "^2.0.0",
