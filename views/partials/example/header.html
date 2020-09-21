@@ -55,7 +55,7 @@
 			<ul class="o-header__nav-list o-header__nav-list--left">
 				{{#each navigationLists.navbar-uk.items}}
 				<li class="o-header__nav-item">
-					<a class="o-header__nav-link o-header__nav-link--primary" href="{{url}}" id="o-header-link-{{@index}}" {{#if selected}}aria-current="page" aria-label="Current page"{{/if}}>{{label}}</a>
+					<a class="o-header__nav-link o-header__nav-link--primary" href="{{url}}" id="o-header-link-{{@index}}" {{#if selected}}aria-current="page" aria-label="{{label}}, current page"{{/if}}>{{label}}</a>
 					{{#if this.submenu}}
 						<div class="o-header__mega" id="o-header-mega-{{@index}}" role="group" aria-labelledby="o-header-link-{{@index}}" data-o-header-mega>
 							<div class="o-header__container">
@@ -94,7 +94,7 @@
 						<ol class="o-header__subnav-list o-header__subnav-list--breadcrumb" aria-label="Breadcrumb">
 							{{#each breadcrumb}}
 							<li class="o-header__subnav-item">
-								<a class="o-header__subnav-link" href="{{url}}" {{#if selected}}aria-current="page" aria-label="Current page"{{/if}}>
+								<a class="o-header__subnav-link" href="{{url}}" {{#if selected}}aria-current="page" aria-label="{{label}}, current page"{{/if}}>
 									{{label}}
 								</a>
 							</li>
@@ -106,7 +106,7 @@
 						<ul class="o-header__subnav-list o-header__subnav-list--subsections" aria-label="Subsections">
 							{{#each subsections.items}}
 							<li class="o-header__subnav-item">
-								<a class="o-header__subnav-link" href="{{url}}" {{#if selected}}aria-current="page" aria-label="Current page"{{/if}}>
+								<a class="o-header__subnav-link" href="{{url}}" {{#if selected}}aria-current="page" aria-label="{{label}}, current page"{{/if}}>
 									{{label}}
 								</a>
 							</li>
@@ -180,7 +180,7 @@
 							{{#if submenu}}
 								<div class="o-header__drawer-menu-toggle-wrapper">
 									{{#if submenu.items}}
-									<a class="o-header__drawer-menu-link o-header__drawer-menu-link--parent o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="Current page" aria-current="page"{{/if}}>{{label}}</a>
+									<a class="o-header__drawer-menu-link o-header__drawer-menu-link--parent o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="{{label}}, current page" aria-current="page"{{/if}}>{{label}}</a>
 									<button class="o-header__drawer-menu-toggle o-header__drawer-menu-toggle--{{#if selected}}selected{{else}}unselected{{/if}}" aria-controls="o-header-drawer-child-{{@index}}">
 										Show more {{label}} links
 									</button>
@@ -189,12 +189,12 @@
 								<ul class="o-header__drawer-menu-list o-header__drawer-menu-list--child" id="o-header-drawer-child-{{@index}}">
 								{{#each submenu.items}}
 									<li class="o-header__drawer-menu-item">
-										<a class="o-header__drawer-menu-link o-header__drawer-menu-link--child o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="Current page" aria-current="page"{{/if}}>{{label}}</a>
+										<a class="o-header__drawer-menu-link o-header__drawer-menu-link--child o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="{{label}}, current page" aria-current="page"{{/if}}>{{label}}</a>
 									</li>
 								{{/each}}
 								</ul>
 							{{else}}
-								<a class="o-header__drawer-menu-link{{#if variation}} o-header__drawer-menu-link--{{variation}}{{/if}} o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="Current page" aria-current="page"{{/if}}>{{label}}</a>
+								<a class="o-header__drawer-menu-link{{#if variation}} o-header__drawer-menu-link--{{variation}}{{/if}} o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="{{label}}, current page" aria-current="page"{{/if}}>{{label}}</a>
 							{{/if}}
 						</li>
 					{{/each}}
