@@ -139,19 +139,6 @@
 			<p class="o-header__drawer-current-edition">{{edition}} Edition</p>
 		</div>
 
-
-		{{#if editions}}
-		<nav class="o-header__drawer-menu" aria-label="Edition switcher">
-			<ul class="o-header__drawer-menu-list">
-				{{#each editions}}
-				<li class="o-header__drawer-menu-item"></li>
-					<a class="o-header__drawer-menu-link" href="/?edition={{this}}">Switch to {{this}} Edition</a>
-				</li>
-				{{/each}}
-			</ul>
-		</nav>
-		{{/if}}
-
 		<div class="o-header__drawer-search">
 			<form class="o-header__drawer-search-form" action="/search" role="search" aria-label="Site search">
 				<label class="o-header__visually-hidden" for="o-header-drawer-search-term">Search the <abbr
@@ -164,6 +151,18 @@
 				</button>
 			</form>
 		</div>
+
+		{{#if editions}}
+		<nav class="o-header__drawer-menu" aria-label="Edition switcher">
+			<ul class="o-header__drawer-menu-list">
+				{{#each editions}}
+				<li class="o-header__drawer-menu-item"></li>
+					<a class="o-header__drawer-menu-link" href="/?edition={{this}}">Switch to {{this}} Edition</a>
+				</li>
+				{{/each}}
+			</ul>
+		</nav>
+		{{/if}}
 
 		<nav class="o-header__drawer-menu o-header__drawer-menu--primary">
 			<ul class="o-header__drawer-menu-list">
