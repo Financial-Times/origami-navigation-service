@@ -194,7 +194,7 @@
 								{{/each}}
 								</ul>
 							{{else}}
-								<a class="o-header__drawer-menu-link{{#if variation}} o-header__drawer-menu-link--{{variation}}{{/if}} o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="{{label}}, current page" aria-current="page"{{/if}}>{{label}}</a>
+								<a class="o-header__drawer-menu-link{{#unless ../label }} o-header__drawer-menu-link--secondary{{/unless}}{{#if variation}} o-header__drawer-menu-link--{{variation}}{{/if}} o-header__drawer-menu-link--{{#if selected}}selected{{else}}unselected{{/if}}" href="{{url}}" {{#if selected}}aria-label="{{label}}, current page" aria-current="page"{{/if}}>{{label}}</a>
 							{{/if}}
 						</li>
 					{{/each}}
