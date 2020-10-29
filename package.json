@@ -51,7 +51,7 @@
     "proclaim": "^3.6.0",
     "sinon": "^1",
     "sinon-as-promised": "^4",
-    "supertest": "^5.0.0"
+    "supertest": "^6.0.0"
   },
   "snyk": true
 }
