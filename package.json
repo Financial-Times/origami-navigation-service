@@ -37,7 +37,7 @@
     "http-errors": "^1",
     "request": "^2.88.2",
     "require-all": "^3",
-    "snyk": "^1.455.0",
+    "snyk": "^1.465.0",
     "statuses": "^2.0.1",
     "throng": "^4.0.0"
   },
