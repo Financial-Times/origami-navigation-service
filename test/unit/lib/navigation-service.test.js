@@ -27,11 +27,11 @@ describe('lib/navigation-service', () => {
 		healthChecks = require('../mock/health-checks.mock');
 		mockery.registerMock('./health-checks', healthChecks);
 
-		linksData = require('../mock/ft-poller.mock');
-		mockery.registerMock('./links-data', linksData);
+		linksData = {};
+		mockery.registerMock('../build/v2/links.json', linksData);
 
-		navigationData = require('../mock/ft-poller.mock');
-		mockery.registerMock('./navigation-data', navigationData);
+		navigationData = {};
+		mockery.registerMock('../build/v2/navigation.json', navigationData);
 
 		requireAll = require('../mock/require-all.mock');
 		mockery.registerMock('require-all', requireAll);
@@ -52,7 +52,6 @@ describe('lib/navigation-service', () => {
 			options = {
 				environment: 'test',
 				port: 1234,
-				navigationDataStore: 'http://navstore/'
 			};
 			routes = {
 				foo: sinon.spy(),
@@ -117,28 +116,12 @@ describe('lib/navigation-service', () => {
 			assert.calledWith(origamiService.mockApp.use, origamiService.middleware.errorHandler.firstCall.returnValue);
 		});
 
-		it('creates a links data poller', () => {
-			assert.called(linksData);
-			assert.calledWith(linksData, {
-				dataStore: options.navigationDataStore,
-				version: 2
-			});
+		it('sets the application `linksDataV2` property to the links data', () => {
+			assert.strictEqual(origamiService.mockApp.linksDataV2, linksData);
 		});
 
-		it('sets the application `linksDataV2` property to the links data poller', () => {
-			assert.strictEqual(origamiService.mockApp.linksDataV2, linksData.mockPoller);
-		});
-
-		it('creates a navigation data poller', () => {
-			assert.called(navigationData);
-			assert.calledWith(navigationData, {
-				dataStore: options.navigationDataStore,
-				version: 2
-			});
-		});
-
-		it('sets the application `navigationDataV2` property to the navigation data poller', () => {
-			assert.strictEqual(origamiService.mockApp.navigationDataV2, navigationData.mockPoller);
+		it('sets the application `navigationDataV2` property to the navigation data', () => {
+			assert.strictEqual(origamiService.mockApp.navigationDataV2, navigationData);
 		});
 
 		it('returns the created application', () => {

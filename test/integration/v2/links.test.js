@@ -14,15 +14,7 @@ describe('GET /v2/links', function () {
 		this.request.expect(response => {
 			assert.isString(response.text);
 			const json = JSON.parse(response.text);
-			// Note: mock data can be found in ../mock/store.js
-			assert.deepEqual(json, [
-				{
-					label: 'Link 1'
-				},
-				{
-					label: 'Link 2'
-				}
-			]);
+			assert.deepEqual(json, require('../../../build/v2/links.json'));
 		}).end(done);
 	});
 

@@ -4,6 +4,7 @@ const assert = require('proclaim');
 const itRespondsWithContentType = require('../helpers/it-responds-with-content-type');
 const itRespondsWithStatus = require('../helpers/it-responds-with-status');
 const setupRequest = require('../helpers/setup-request');
+const menu = require('../../../build/v2/navigation.json');
 
 describe('GET /v2/menus', function () {
 
@@ -16,14 +17,7 @@ describe('GET /v2/menus', function () {
 			assert.isString(response.text);
 			const json = JSON.parse(response.text);
 			// Note: mock data can be found in ../mock/store.js
-			assert.deepEqual(json, {
-				menu1: {
-					label: 'Menu 1'
-				},
-				menu2: {
-					label: 'Menu 2'
-				}
-			});
+			assert.deepEqual(json, menu);
 		}).end(done);
 	});
 
@@ -31,7 +25,7 @@ describe('GET /v2/menus', function () {
 
 describe('GET /v2/menus/:validName', function() {
 
-	setupRequest('GET', '/v2/menus/menu1?source=test');
+	setupRequest('GET', '/v2/menus/footer?source=test');
 	itRespondsWithStatus(200);
 	itRespondsWithContentType('application/json');
 
@@ -40,9 +34,7 @@ describe('GET /v2/menus/:validName', function() {
 			assert.isString(response.text);
 			const json = JSON.parse(response.text);
 			// Note: mock data can be found in ../mock/store.js
-			assert.deepEqual(json, {
-				label: 'Menu 1'
-			});
+			assert.deepEqual(json, menu['footer']);
 		}).end(done);
 	});
 

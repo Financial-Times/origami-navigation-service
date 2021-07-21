@@ -11,7 +11,6 @@ const options = {
 	defaultLayout: 'main',
 	log: console,
 	name: 'Origami Navigation Service',
-	navigationDataStore: process.env.NAVIGATION_DATA_STORE || 'https://origami-navigation-data.in.ft.com',
 	testHealthcheckFailure: process.env.TEST_HEALTHCHECK_FAILURE || false,
 	workers: process.env.WEB_CONCURRENCY || 1
 };

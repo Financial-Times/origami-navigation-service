@@ -4,14 +4,13 @@ Origami Navigation Service
 
 Provides consistent navigation for FT applications. See [the production service][production-url] for API information.
 
-**:exclamation: If you need to edit the links that the Navigation Service provides, this isn't the right place – you need to edit files in the [Origami Navigation Data repo][navigation-data]**
-
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 
 
 Table Of Contents
 -----------------
 
+  * [How to edit navigation data](#how-to-edit-navigation-data)
   * [Requirements](#requirements)
   * [Running Locally](#running-locally)
   * [Configuration](#configuration)
@@ -23,10 +22,24 @@ Table Of Contents
   * [License](#license)
 
 
+How to edit navigation data
+---------------------------
+
+The navigation data is written in YAML and can be edited via the Github edit tool.
+
+Steps to edit navigation data:
+
+- Open the navigation data file in the [Github edit tool](https://github.com/Financial-Times/origami-navigation-service/edit/master/data/navigation.yaml)
+- Make the necessary changes
+- Press the "Commit changes" button
+- Add a comment which explains what you are changing and why
+- Press the "Create pull request" button
+- Someone from [Origami](https://github.com/orgs/Financial-Times/teams/origami-core) will review your changes before merging them into production
+
 Requirements
 ------------
 
-Running Origami Navigation Service requires [Node.js] 6.x and [npm].
+Running Origami Navigation Service requires [Node.js] 10 and [npm].
 
 
 Running Locally

@@ -1,0 +1,1531 @@
+#   Holds a flat list of every single link used on the site
+#   Each link should have an identifier (the bit beginning with &), and label and url.
+#   Naming convention: the identifier should be the name value with spaces replaced by underscores.  All other punctuation should be removed,
+#                      including ampersands but all words are kept (so "name and name" becomes name_and_name but "name, name & name" becomes name_name_name
+#
+
+links:
+
+  - &home
+    label: Home
+    url: "/"
+    submenu:
+
+  - &world
+    label: World
+    url: "/world"
+    submenu:
+
+  - &uk
+    label: UK
+    url: "/world/uk"
+    submenu:
+
+  - &us
+    label: US
+    url: "/world/us"
+    submenu:
+
+  - &companies
+    label: Companies
+    url: "/companies"
+    submenu:
+
+  - &technology
+    label: Tech
+    url: "/technology"
+    submenu:
+
+  - &markets
+    label: Markets
+    url: "/markets"
+    submenu:
+
+  - &graphics
+    label: Graphics
+    url: "/graphics"
+    submenu:
+
+  - &opinion
+    label: Opinion
+    url: "/opinion"
+    submenu:
+
+  - &work_careers
+    label: Work & Careers
+    url: "/work-careers"
+    submenu:
+
+  - &life_arts
+    label: Life & Arts
+    url: "/life-arts"
+    submenu:
+
+  - &global_economy
+    label: "Global Economy"
+    url: "/global-economy"
+    submenu:
+
+  - &central_banks
+    label: "Central Banks"
+    url: "/central-banks"
+    submenu:
+
+  - &us_economy
+    label: "US Economy"
+    url: "/us-economy"
+    submenu:
+
+  - &us_presidentialelection
+    label: "US Presidential Election 2020"
+    url: "/us-presidential-election-2020"
+    submenu:
+
+  - &asia_pacific_economy
+    label: "Asia-Pacific Economy"
+    url: "/global-economy/asia-pacific"
+    submenu:
+
+  - &eu_economy
+    label: "EU Economy"
+    url: "/eu-economy"
+    submenu:
+
+  - &africas_economy
+    label: "Americas Economy"
+    url: "/global-economy/americas"
+    submenu:
+
+  - &middle_eastern_economy
+    label: "Middle Eastern Economy"
+    url: "/global-economy/mideast"
+    submenu:
+
+  - &uk_economy
+    label: "UK Business & Economy"
+    url: "/uk-business-economy"
+    submenu:
+
+  - &uk_politics_policy
+    label: "UK Politics & Policy"
+    url: "/world/uk/politics"
+    submenu:
+
+  - &brexit
+    label: "Brexit"
+    url: "/brexit"
+    submenu:
+
+  - &ukelection
+    label: "UK General Election"
+    url: "/uk-general-election"
+    submenu:
+
+  - &uk_companies
+    label: "UK Companies"
+    url: "/companies/uk"
+    submenu:
+
+  - &uk_small_companies
+    label: "UK Small Companies"
+    url: "/companies/uk-smaller-companies"
+    submenu:
+
+  - &england
+    label: "England"
+    url: "/topics/places/England"
+    submenu:
+
+  - &scotland
+    label: "Scotland"
+    url: "/topics/places/Scotland"
+    submenu:
+
+  - &wales
+    label: "Wales"
+    url: "/topics/places/Wales"
+    submenu:
+
+  - &n_ireland
+    label: "N. Ireland"
+    url: "/topics/places/Northern_Ireland"
+    submenu:
+
+  - &us_politics_policy
+    label: "US Politics & Policy"
+    url: "/world/us/politics"
+    submenu:
+
+  - &us_society
+    label: "US Society"
+    url: "/world/us/society"
+    submenu:
+
+  - &us_companies
+    label: "US Companies"
+    url: "/companies/us"
+    submenu:
+
+  - &us_election
+    label: "US Election 2016"
+    url: "/us-election-2016"
+    submenu:
+
+  - &canada
+    label: "Canada"
+    url: "/world/canada"
+    submenu:
+
+  - &europe
+    label: "Europe"
+    url: "/world/europe"
+    submenu:
+
+  - &european_union
+    label: "European Union"
+    url: "/european-union"
+    submenu:
+
+  - &latin_america
+    label: "Americas"
+    url: "/world/americas"
+    submenu:
+
+  - &americas
+    label: "Americas"
+    url: "/world/americas"
+    submenu:
+
+  - &asia_pacific
+    label: "Asia Pacific"
+    url: "/world/asia-pacific"
+    submenu:
+
+  - &china
+    label: "China"
+    url: "/world/asia-pacific/china"
+    submenu:
+
+  - &chinese_economy
+    label: "Chinese Economy"
+    url: "/chinese-economy"
+    submenu:
+
+  - &china_politics_policy
+    label: "China Politics & Policy"
+    url: "/chinese-politics-policy"
+    submenu:
+
+  - &india
+    label: "India"
+    url: "/world/asia-pacific/india"
+    submenu:
+
+  - &japan
+    label: "Japan"
+    url: "/world/asia-pacific/japan"
+    submenu:
+
+  - &north_korea
+    label: "North Korea"
+    url: "/world/asia-pacific/north-korea"
+    submenu:
+
+  - &africa
+    label: "Africa"
+    url: "/world/africa"
+    submenu:
+
+  - &african_companies
+    label: "African Companies"
+    url: "/companies/africa"
+    submenu:
+
+  - &africa_economy
+    label: "Africa Economy"
+    url: "/global-economy/africa"
+    submenu:
+
+  - &middle_east_and_africa
+    label: "Middle East and North Africa"
+    url: "/world/mideast"
+    submenu:
+
+  - &middle_eastern_politics_society
+    label: "Middle Eastern Politics & Society"
+    url: "/world/mideast/politics"
+    submenu:
+
+  - &middle_eastern_companies
+    label: "Middle Eastern Companies"
+    url: "/companies/byregion/mideast"
+    submenu:
+
+  - &emerging_markets
+    label: "Emerging Markets"
+    url: "/emerging-markets"
+    submenu:
+
+  - &science
+    label: "Science"
+    url: "/companies/science"
+    submenu:
+
+  - &medical_science
+    label: "Medical Science"
+    url: "/medical-science"
+    submenu:
+
+  - &tech_sector
+    label: "Tech Sector"
+    url: "/companies/technology"
+    submenu:
+
+  - &financials
+    label: "Financials"
+    url: "/companies/financials"
+    submenu:
+
+  - &banks
+    label: "Banks"
+    url: "/companies/banks"
+    submenu:
+
+  - &insurance
+    label: "Insurance"
+    url: "/companies/insurance"
+    submenu:
+
+  - &property
+    label: "Property"
+    url: "/companies/property"
+    submenu:
+
+  - &financial_services
+    label: "Financial Services"
+    url: "/companies/financial-services"
+    submenu:
+
+  - &energy
+    label: "Energy"
+    url: "/companies/energy"
+    submenu:
+
+  - &mining
+    label: "Mining"
+    url: "/companies/mining"
+    submenu:
+
+  - &oil_gas
+    label: "Oil & Gas"
+    url: "/companies/oil-gas"
+    submenu:
+
+  - &utilities
+    label: "Utilities"
+    url: "/companies/utilities"
+    submenu:
+
+  - &retail_consumer
+    label: "Retail & Consumer"
+    url: "/companies/retail-consumer"
+    submenu:
+
+  - &food_beverage
+    label: "Food & Beverage"
+    url: "/companies/food-beverage"
+    submenu:
+
+  - &luxury_goods
+    label: 'Luxury Goods'
+    url: '/companies/luxury-goods'
+    submenu:
+
+  - &personal_household_goods
+    label: "Personal & Household Goods"
+    url: "/companies/personal-goods"
+    submenu:
+
+  - &professional_services
+    label: "Professional Services"
+    url: "/companies/professional-services"
+    submenu:
+
+  - &accounting_consulting_services
+    label: "Accounting & Consulting Services"
+    url: "/accounting-consulting-services"
+    submenu:
+
+  - &legal_services
+    label: "Legal Services"
+    url: "/companies/legal-services"
+    submenu:
+
+  - &recruitment_services
+    label: "Recruitment Services"
+    url: "/companies/recruitment-services"
+    submenu:
+
+  - &retail
+    label: "Retail"
+    url: "/companies/retail"
+    submenu:
+
+  - &tobacco
+    label: "Tobacco"
+    url: "/companies/tobacco"
+    submenu:
+
+  - &travel_leisure
+    label: "Travel & Leisure"
+    url: "/companies/travel-leisure"
+    submenu:
+
+  - &industrials
+    label: "Industrials"
+    url: "/companies/industrials"
+    submenu:
+
+  - &aerospace_defence
+    label: "Aerospace & Defence"
+    url: "/companies/aerospace-defence"
+    submenu:
+
+  - &automobiles
+    label: "Automobiles"
+    url: "/companies/automobiles"
+    submenu:
+
+  - &basic_resources
+    label: "Basic Resources"
+    url: "/companies/basic-resources"
+    submenu:
+
+  - &chemicals
+    label: "Chemicals"
+    url: "/companies/chemicals"
+    submenu:
+
+  - &construction
+    label: "Construction"
+    url: "/companies/construction"
+    submenu:
+
+  - &industrial_goods
+    label: "Industrial Goods"
+    url: "/companies/industrial-goods"
+    submenu:
+
+  - &support_services
+    label: "Support Services"
+    url: "/companies/support-services"
+    submenu:
+
+  - &telecoms
+    label: "Telecoms"
+    url: "/companies/telecoms"
+    submenu:
+
+  - &health
+    label: "Health"
+    url: "/companies/health"
+    submenu:
+
+  - &health_care
+    label: "Health Care"
+    url: "/companies/healthcare"
+    submenu:
+
+  - &pharmaceuticals
+    label: "Pharmaceuticals"
+    url: "/companies/pharmaceuticals"
+    submenu:
+
+  - &media
+    label: "Media"
+    url: "/companies/media"
+    submenu:
+
+  - &transport
+    label: "Transport"
+    url: "/companies/transport"
+    submenu:
+
+  - &airlines
+    label: "Airlines"
+    url: "/companies/airlines"
+    submenu:
+
+  - &shipping
+    label: "Shipping"
+    url: "/companies/shipping"
+    submenu:
+
+  - &rail
+    label: "Rail"
+    url: "/companies/rail"
+    submenu:
+
+  - &fastft
+    label: "fastFT"
+    url: "/fastft"
+    submenu:
+
+  - &markets_data
+    label: "Markets Data"
+    url: "https://markets.ft.com/data"
+    submenu:
+
+  - &etf_hub
+    label: "ETF Hub"
+    url: "https://etf.ft.com"
+    submenu:
+
+  - &commodities
+    label: "Commodities"
+    url: "/commodities"
+    submenu:
+
+  - &oil
+    label: "Oil"
+    url: "/oil"
+    submenu:
+
+  - &gold
+    label: "Gold"
+    url: "/gold"
+    submenu:
+
+  - &copper
+    label: "Copper"
+    url: "/copper"
+    submenu:
+
+  - &currencies
+    label: "Currencies"
+    url: "/currencies"
+    submenu:
+
+  - &cryptocurrencies
+    label: "Cryptocurrencies"
+    url: "/cryptocurrencies"
+    submenu:
+
+  - &usdollar
+    label: "US Dollar"
+    url: "/us-dollar"
+    submenu:
+
+  - &euro
+    label: "Euro"
+    url: "/euro"
+    submenu:
+
+  - &poundsterling
+    label: "Pound Sterling"
+    url: "/pound-sterling"
+    submenu:
+
+  - &renminbi
+    label: "Renminbi"
+    url: "/renminbi"
+    submenu:
+
+  - &yen
+    label: "Yen"
+    url: "/yen"
+    submenu:
+
+  - &equities
+    label: "Equities"
+    url: "/equities"
+    submenu:
+
+  - &us_equities
+    label: "US Equities"
+    url: "/markets/us"
+    submenu:
+
+  - &uk_equities
+    label: "UK Equities"
+    url: "/markets/uk"
+    submenu:
+
+  - &european_equities
+    label: "European Equities"
+    url: "/markets/europe"
+    submenu:
+
+  - &asia_pacific_equities
+    label: "Asia-Pacific Equities"
+    url: "/markets/asia-pacific"
+    submenu:
+
+  - &capital_markets
+    label: "Capital Markets"
+    url: "/capital-markets"
+    submenu:
+
+  - &moral_money
+    label: "Moral Money"
+    url: "/moral-money"
+    submenu:
+
+  - &fund_management
+    label: "Fund Management"
+    url: "/fund-management"
+    submenu:
+
+  - &ftfm
+    label: "FTfm"
+    url: "/ftfm"
+    submenu:
+
+  - &investment_strategy
+    label: "Investment Strategy"
+    url: "/ftfm/investment-strategy"
+    submenu:
+
+  - &people_in_fund_management
+    label: "People in Fund Management"
+    url: "/ftfm/people"
+    submenu:
+
+  - &funds_regulation
+    label: "Funds Regulation"
+    url: "/fund-regulation"
+    submenu:
+
+  - &pensions_industry
+    label: "Pensions Industry"
+    url: "/pensions-industry"
+    submenu:
+
+  - &trading
+    label: "Trading"
+    url: "/ft-trading-room"
+    submenu:
+
+  - &clearing_settlement
+    label: "Clearing & Settlement"
+    url: "/ft-trading-room/clearing-settlement"
+    submenu:
+
+  - &high_frequency_trading
+    label: "High Frequency Trading"
+    url: "/ft-trading-room/high-frequency-trading"
+    submenu:
+
+  - &markets_regulation
+    label: "Markets Regulation"
+    url: "/financial-markets-regulation"
+    submenu:
+
+  - &trading_technology
+    label: "Trading Technology"
+    url: "/ft-trading-room/trading-technology"
+    submenu:
+
+  - &exchanges_consolidation
+    label: "Exchanges Consolidation"
+    url: "/ft-trading-room/exchanges-consolidation"
+    submenu:
+
+  - &derivatives
+    label: "Derivatives"
+    url: "/derivatives"
+    submenu:
+
+  - &otc_markets
+    label: "OTC markets"
+    url: "/otc-markets"
+    submenu:
+
+  - &trading_room
+    label: "Trading Room"
+    url: "/ft-trading-room"
+    submenu:
+
+  - &ft_view
+    label: "The FT View"
+    url: "/ft-view"
+    submenu:
+
+  - &the_big_read
+    label: "The Big Read"
+    url: "/the-big-read"
+    submenu:
+
+  - &instant_insight
+    label: "Instant Insight"
+    url: "/instant-insight"
+    submenu:
+
+  - &lex
+    label: "Lex"
+    url: "/lex"
+    submenu:
+
+  - &columnists
+    label: "Columnists"
+    url: "/columnists"
+    submenu:
+
+  - &blogs
+    label: 'Blogs'
+    url: '/blogs'
+    submenu:
+
+  - &obituaries
+    label: 'Obituaries'
+    url: '/obituaries'
+    submenu:
+
+  - &letters
+    label: 'Letters'
+    url: '/letters'
+    submenu:
+
+  - &anjana_ahuja
+    label: 'Anjana Ahuja'
+    url: '/anjana-ahuja'
+    submenu:
+
+  - &john_authers
+    label: 'John Authers'
+    url: '/john-authers'
+    submenu:
+
+  - &pilita_clark
+    label: 'Pilita Clark'
+    url: '/pilita-clark'
+    submenu:
+
+  - &janan_ganesh
+    label: "Janan Ganesh"
+    url: "/janan-ganesh"
+    submenu:
+
+  - &john_gapper
+    label: "John Gapper"
+    url: "/john-gapper"
+    submenu:
+
+  - &andrew_hill
+    label: "Andrew Hill"
+    url: "/andrew-hill"
+    submenu:
+
+  - &john_kay
+    label: "John Kay"
+    url: "/john-kay"
+    submenu:
+
+  - &lucy_kellaway
+    label: "Lucy Kellaway"
+    url: "/lucy-kellaway"
+    submenu:
+
+  - &roula_khalaf
+    label: "Roula Khalaf"
+    url: "/roula-khalaf"
+    submenu:
+
+  - &edward_luce
+    label: "Edward Luce"
+    url: "/edward-luce"
+    submenu:
+
+  - &wolfgang_munchau
+    label: "Wolfgang Münchau"
+    url: "/wolfgang-munchau"
+    submenu:
+
+  - &david_pilling
+    label: "David Pilling"
+    url: "/david-pilling"
+    submenu:
+
+  - &ingram_pinn
+    label: "Ingram Pinn"
+    url: "/ingram-pinn"
+    submenu:
+
+  - &gideon_rachman
+    label: "Gideon Rachman"
+    url: "/gideon-rachman"
+    submenu:
+
+  - &rana_foroohar
+    label: "Rana Foroohar"
+    url: "/rana-foroohar"
+    submenu:
+
+  - &robert_shrimsley
+    label: "Robert Shrimsley"
+    url: "/robert-shrimsley"
+    submenu:
+
+  - &gary_Silverman
+    label: "Gary Silverman"
+    url: "/gary-silverman"
+    submenu:
+
+  - &philip_stephens
+    label: "Philip Stephens"
+    url: "/philip-stephens"
+    submenu:
+
+  - &lawrence_summers
+    label: "Lawrence Summers"
+    url: "/lawrence-summers"
+    submenu:
+
+  - &gillian_tett
+    label: "Gillian Tett"
+    url: "/gillian-tett"
+    submenu:
+
+  - &patti_waldmeir
+    label: "Patti Waldmeir"
+    url: "/patti-waldmeir"
+    submenu:
+
+  - &martin_wolf
+    label: "Martin Wolf"
+    url: "/martin-wolf"
+    submenu:
+
+  - &martin_sandbu
+    label: 'Martin Sandbu'
+    url: '/martin-sandbu'
+    submenu:
+
+  - &john_thornhill
+    label: 'John Thornhill'
+    url: '/john-thornhill'
+    submenu:
+
+  - &gavyn_davies
+    label: 'Gavyn Davies'
+    url: '/gavyn-davies'
+    submenu:
+
+  - &nick_butler
+    label: 'Nick Butler'
+    url: '/nick-butler'
+    submenu:
+
+  - &david_gardner
+    label: 'David Gardner'
+    url: '/david-gardner'
+    submenu:
+
+  - &michael_skapinker
+    label: 'Michael Skapinker'
+    url: '/michael-skapinker'
+    submenu:
+
+  - &izabella_kaminska
+    label: 'Izabella Kaminska'
+    url: '/izabella-kaminska'
+    submenu:
+
+  - &sarah_oconnor
+    label: "Sarah O'Connor"
+    url: '/sarah-o-connor'
+    submenu:
+
+  - &magazine
+    label: "FT Magazine"
+    url: "/magazine"
+    submenu:
+
+  - &special_editions
+    label: "Special editions"
+    url: "/magazine-special-editions"
+    submenu:
+
+  - &house_home
+    label: "House & Home"
+    url: "/house-home"
+    submenu:
+
+  - &books
+    label: "Books"
+    url: "/books"
+    submenu:
+
+  - &essay
+    label: "Essay"
+    url: "/essay"
+    submenu:
+
+  - &fiction
+    label: "Fiction"
+    url: "/fiction"
+    submenu:
+
+  - &non_fiction
+    label: "Non-Fiction"
+    url: "/non-fiction"
+    submenu:
+
+  - &food_drink
+    label: "Food & Drink"
+    url: "/food-drink"
+    submenu:
+
+  - &wine
+    label: 'Wine'
+    url: '/wine'
+    submenu:
+
+  - &recipes
+    label: 'Recipes'
+    url: '/recipes'
+    submenu:
+
+  - &restaurants
+    label: 'Restaurants'
+    url  : '/restaurants'
+    submenu:
+
+  - &nextact
+    label: "Next Act"
+    url: "/next-act"
+    submenu:
+
+  - &travel
+    label: "Travel"
+    url: "/travel"
+    submenu:
+
+  - &adventures
+    label: "Adventure Holidays"
+    url: "/adventure-holidays"
+    submenu:
+
+  - &cycling_tours
+    label: "Cycling Holidays"
+    url: "/cycling-holidays"
+    submenu:
+
+  - &city_breaks
+    label: "City Breaks"
+    url: "/city-breaks"
+    submenu:
+
+  - &winter_breaks
+    label: "Winter Sports"
+    url: "/winter-sports"
+    submenu:
+
+  - &globetrotter
+    label: "FT Globetrotter"
+    url: "/globetrotter"
+    submenu:
+
+  - &globetrotterlondon
+    label: "London"
+    url: "/globetrotter/london"
+    submenu:
+
+  - &globetrotterparis
+    label: "Paris"
+    url: "/globetrotter/paris"
+    submenu:
+
+  - &globetrotterhongkong
+    label: "Hong Kong"
+    url: "/globetrotter/hong-kong"
+    submenu:
+
+  - &globetrotternewyorkcity
+    label: "New York City"
+    url: "/globetrotter/new-york-city"
+    submenu:
+
+  - &globetrotterfrankfurt
+    label: "Frankfurt"
+    url: "/globetrotter/frankfurt"
+    submenu:
+
+  - &globetrottertokyo
+    label: "Tokyo"
+    url: "/globetrotter/tokyo"
+    submenu:
+
+  - &globetrotterrome
+    label: "Rome"
+    url: "/globetrotter/rome"
+    submenu:
+
+  - &globetrottersingapore
+    label: "Singapore"
+    url: "/globetrotter/singapore"
+    submenu:
+
+  - &style
+    label: "Style"
+    url: "/style"
+    submenu:
+
+  - &fashion_shows
+    label: "Fashion shows"
+    url: "/fashion-shows"
+    submenu:
+
+  - &art_fashion
+    label: "The Art of Fashion"
+    url: "/art-of-fashion"
+    submenu:
+
+  - &arts
+    label: "Arts"
+    url: "/arts"
+    submenu:
+
+  - &architecture
+    label: "Architecture"
+    url: "/architecture"
+    submenu:
+
+  - &design
+    label: "Design"
+    url: "/design"
+    submenu:
+
+  - &visual_arts
+    label: "Visual Arts"
+    url: "/visual-arts"
+    submenu:
+
+  - &theatre
+    label: "Theatre"
+    url: "/theatre"
+    submenu:
+
+  - &dance
+    label: "Dance"
+    url: "/dance"
+    submenu:
+
+  - &music
+    label: "Music"
+    url: "/music"
+    submenu:
+
+  - &film
+    label: "Film"
+    url: "/film"
+    submenu:
+
+  - &television
+    label: "Television"
+    url: "/television"
+    submenu:
+
+  - &climate_capital
+    label: "Climate"
+    url: "/climate-capital"
+    submenu:
+
+  - &business_education
+    label: "Business Education"
+    url: "/business-education"
+    submenu:
+
+  - &business_school_rankings
+    label: 'Business School Rankings'
+    url: 'http://rankings.ft.com/businessschoolrankings/rankings'
+    submenu:
+
+  - &mba_rankings
+    label: "MBA Rankings"
+    url: "http://rankings.ft.com/businessschoolrankings/global-mba-ranking-2020"
+    submenu:
+
+  - &applying_to_a_business_school
+    label: "Applying to a Business School"
+    url: "/applying-to-business-school"
+    submenu:
+
+  - &starting_a_business
+    label: "Starting a Business"
+    url: "/starting-a-business"
+    submenu:
+
+  - &executive_education
+    label: "Executive Education"
+    url: "/executive-education"
+    submenu:
+
+  - &management
+    label: "Management"
+    url: "/management"
+    submenu:
+
+  - &entrepreneurship
+    label: "Entrepreneurship"
+    url: "/entrepreneurship"
+    submenu:
+
+  - &recruitment
+    label: "Recruitment"
+    url: "/recruitment"
+    submenu:
+
+  - &business_books
+    label: "Business Books"
+    url: "/business-books"
+    submenu:
+
+  - &business_travel
+    label: "Business Travel"
+    url: "/business-travel"
+    submenu:
+
+  - &alphaville
+    label: "Alphaville"
+    url: "/alphaville"
+    submenu:
+
+  - &special_reports
+    label: "Special Reports"
+    url: "/special-reports"
+    submenu:
+
+  - &portfolio
+    label: "Portfolio"
+    url: "https://markets.ft.com/data/portfolio/dashboard"
+    submenu:
+
+  - &personal_finance
+    label: "Personal Finance"
+    url: "/personal-finance"
+    submenu:
+
+  - &property_mortgages
+    label: "Property & Mortgages"
+    url: "/personal-finance/mortgages"
+    submenu:
+
+  - &investments
+    label: "Investments"
+    url: "/personal-finance/investments"
+    submenu:
+
+  - &pensions
+    label: "Pensions"
+    url: "/personal-finance/pensions"
+    submenu:
+
+  - &tax
+    label: "Tax"
+    url: "/personal-finance/tax"
+    submenu:
+
+  - &banking_savings
+    label: "Banking & Savings"
+    url: "/personal-finance/banking-savings"
+    submenu:
+
+  - &epaper
+    label: "Today's Newspaper (ePaper)"
+    url: "https://www.ft.com/todaysnewspaper"
+    submenu:
+
+  - &tsa
+    label: "#techAsia"
+    url: "https://www.ft.com/tech-asia"
+    submenu:
+
+  - &ftcr
+    label: "FT Confidential Research"
+    url: "https://www.ft.com/ft-confidential-research"
+    submenu:
+
+  - &video
+    label: 'Video'
+    url: '/video'
+    submenu:
+
+  - &podcasts
+    label: 'Podcasts'
+    url: 'https://www.ft.com/podcasts'
+    submenu:
+
+  - &crossword
+    label: 'Crossword'
+    url: 'https://www.ft.com/crossword'
+    submenu:
+
+  - &apps
+    label: 'Our Apps'
+    url: 'https://www.ft.com/tour/apps'
+    submenu:
+
+  - &tools_services
+    label: "Tools & Services"
+    url: "http://help.ft.com/help/tools-services/"
+    submenu:
+
+  - &newsfeed
+    label: "News feed"
+    url: "/news-feed"
+    submenu:
+
+  - &newsletters
+    label: "Newsletters"
+    url: "/newsletters"
+    submenu:
+
+  - &lunch_with_the_ft
+    label: "Lunch with the FT"
+    url: "/lunch-with-the-ft"
+    submenu:
+
+  - &emsquared
+    label: "EM Squared"
+    url: "/emerging-markets/em-squared"
+    submenu:
+
+  - &sign_in
+    label: "Sign In"
+    url: "/login?location=${currentPath}"
+    submenu:
+
+  - &sign_out
+    label: "Sign Out"
+    url: "/logout"
+    submenu:
+
+  - &anon_subscribe
+    label: "Subscribe"
+    url: "/products?segmentId=d290332b-e8e8-d29b-2ff4-2019b13f008a"
+    submenu:
+
+  - &header_subscribe
+    label: "Subscribe"
+    url: "/products?segmentId=f860e6c2-18af-ab30-cd5e-6e3a456f9265"
+    submenu:
+
+  - &subscribe
+    label: "Subscribe"
+    url: "/products"
+    submenu:
+
+  - &my_account
+    label: "Settings & Account"
+    url: "https://www.ft.com/myaccount"
+    submenu:
+
+  - &contact_preferences
+    label: "Contact Preferences"
+    url: "/myft/alerts"
+    submenu:
+
+  - &my_ft
+    label: "myFT"
+    url: "/myft"
+    submenu:
+
+  - &view_site_tips
+    label: "View Site Tips"
+    url: "/tour"
+    submenu:
+
+  - &help
+    label: "Help Centre"
+    url: "http://help.ft.com"
+    submenu:
+
+  - &contact_us
+    label: "Contact Us"
+    url: "https://aboutus.ft.com/contact-us"
+    submenu:
+
+  - &about_us
+    label: "About Us"
+    url: "http://www.ft.com/aboutus"
+    submenu:
+
+  - &accessibility
+    label: "Accessibility"
+    url: "/accessibility"
+    submenu:
+
+  - &myft_tour
+    label: "myFT Tour"
+    url: "/tour/myft"
+    submenu:
+
+  - &terms_conditions
+    label: "Terms & Conditions"
+    url: "http://help.ft.com/help/legal-privacy/terms-conditions/"
+    submenu:
+
+  - &privacy
+    label: "Privacy Policy"
+    url: "http://help.ft.com/help/legal-privacy/privacy/"
+    submenu:
+
+  - &cookies
+    label: "Cookies"
+    url: "http://help.ft.com/help/legal-privacy/cookies/"
+    submenu:
+
+  - &copyright
+    label: "Copyright"
+    url: "http://help.ft.com/help/legal-privacy/copyright/copyright-policy/"
+    submenu:
+
+  - &editorial_code
+    label: "FT Editorial Code of Practice"
+    url: "http://aboutus.ft.com/company/our-standards/editorial-code"
+    submenu:
+
+  - &conferences_events
+    label: "FT Live"
+    url: "http://live.ft.com/"
+    submenu:
+
+  - &individual_subscriptions
+    label: "Individual Subscriptions"
+    url: "http://www.ft.com/products"
+    submenu:
+
+  - &group_subscriptions
+    label: "Group Subscriptions"
+    url: "https://enterprise.ft.com/en-gb/services/group-subscriptions/group-contact-us/?segmentId=383c7f63-abf4-b62d-cb33-4c278e6fdf61&cpccampaign=B2B_link_ft.com_footer"
+    submenu:
+
+  - &republishing
+    label: "Republishing"
+    url: "https://enterprise.ft.com/en-gb/services/republishing/"
+    submenu:
+
+  - &contracts_tenders
+    label: "Contracts & Tenders"
+    url: "http://www.businessesforsale.com/ft2/notices"
+    submenu:
+
+  - &executive_job_search
+    label: "Executive Job Search"
+    url: "https://www.exec-appointments.com/"
+    submenu:
+
+  - &advertise_with_the_ft
+    label: "Advertise with the FT"
+    url: "http://fttoolkit.co.uk/"
+    submenu:
+
+  - &ft_twitter
+    label: "Follow the FT on Twitter"
+    url: "https://twitter.com/financialtimes"
+    submenu:
+
+  - &alerts_hub
+    label: "Alerts Hub"
+    url: "http://markets.ft.com/data/alerts/"
+    submenu:
+
+  - &currency_converter
+    label: "Currency Converter"
+    url: "https://markets.ft.com/research/Markets/Currencies?segid=70113"
+    submenu:
+
+  - &ft_transact
+    label: "FT Transact"
+    url: "https://transact.ft.com/"
+    submenu:
+
+  - &secondary_schools
+    label: "Secondary Schools"
+    url: "https://enterprise.ft.com/en-gb/services/group-subscriptions/education/"
+    submenu:
+
+  - &agenda
+    label: "Agenda"
+    url: "http://agendaweek.com/"
+    submenu:
+
+  - &analyse_africa
+    label: "Analyse Africa"
+    url: "https://www.analyseafrica.com/"
+    submenu:
+
+  - &board_iq
+    label: "Board IQ"
+    url: "https://www.boardiq.com/"
+    submenu:
+
+  - &corporate_learning_alliance
+    label: "Corporate Learning Alliance"
+    url: "http://www.ftiecla.com/"
+    submenu:
+
+  - &dpn
+    label: "DPN: Deutsche Pensions & Investment Nachrichten"
+    url: "http://www.dpn-online.com/"
+    submenu:
+
+  - &execsense
+    label: "ExecSense"
+    url: "https://www.execsense.com/"
+    submenu:
+
+  - &fdi_intelligence
+    label: "FDI Intelligence"
+    url: "https://www.fdiintelligence.com/"
+    submenu:
+
+  - &financial_advisor_iq
+    label: "Financial Advisor IQ"
+    url: "https://financialadvisoriq.com/"
+    submenu:
+
+  - &ft_chinese
+    label: "FT Chinese"
+    url: "http://www.ftchinese.com/"
+    submenu:
+
+  - &ft_community
+    url: "https://www.ft.com/tour/community"
+    submenu:
+    label: "FT Community"
+
+  - &ft_community_relative
+    <<: *ft_community
+    url: "/tour/community"
+
+  - &ft_live
+    <<: *conferences_events
+    label: "FT Live"
+
+  - &ft_forums
+    label: "FT Forums"
+    url: "https://forums.ft.com/"
+    submenu:
+
+  - &board_director_programme
+    label: "Board Director Programme"
+    url: "https://bdp.ft.com/"
+    submenu:
+
+  - &ft_advisor
+    label: "FT Adviser"
+    url: "https://www.ftadviser.com/"
+    submenu:
+
+  - &fund_fire
+    label: "Fund Fire"
+    url: "https://www.fundfire.com/"
+    submenu:
+
+  - &global_risk_regulator
+    label: "Global Risk Regulator"
+    url: "https://www.globalriskregulator.com/"
+    submenu:
+
+  - &how_to_spend_it
+    label: "How to Spend It"
+    url: "/htsi"
+    submenu:
+
+  - &ignites
+    label: "Ignites"
+    url: "https://www.ignites.com/"
+    submenu:
+
+  - &ignites_asia
+    label: "Ignites Asia"
+    url: "https://www.ignitesasia.com/"
+    submenu:
+
+  - &ignites_europe
+    label: "Ignites Europe"
+    url: "https://www.igniteseurope.com/"
+    submenu:
+
+  - &investors_chronicle
+    label: "Investors Chronicle"
+    url: "https://www.investorschronicle.co.uk/"
+    submenu:
+
+  - &mandate_wire
+    label: "Mandate Wire"
+    url: "https://www.mandatewire.com/"
+    submenu:
+
+  - &new_york_institute_finance
+    label: "New York Insitute of Finance"
+    url: "https://www.nyif.com/"
+    submenu:
+
+  - &non_executive_directors_club
+    label: "Non Executive Directors Club"
+    url: "https://www.non-execs.com/"
+    submenu:
+
+  - &pensions_expert
+    label: "Pensions Expert"
+    url: "http://www.pensions-expert.com/"
+    submenu:
+
+  - &professional_wealth_management
+    label: "Professional Wealth Management"
+    url: "https://www.pwmnet.com/"
+    submenu:
+
+  - &125_club
+    label: "The 125"
+    url: "https://the125.ft.com/"
+    submenu:
+
+  - &the_banker
+    label: "The Banker"
+    url: "http://www.thebanker.com/"
+    submenu:
+
+  - &the_banker_database
+    label: "The Banker Database"
+    url: "https://www.thebankerdatabase.com/"
+    submenu:
+
+  - &this_is_africa
+    label: "This is Africa"
+    url: "https://www.thisisafricaonline.com/"
+    submenu:
+
+  - &collecting
+    label: "Collecting"
+    url: "/collecting"
+    submenu:
+
+  - &advice&comment
+    label: Advice & Comment
+    url: "/personal-finance/advice-commment"
+    submenu:
+
+  - &securedrop
+    label: "Share News Tips Securely"
+    url: "/securedrop"
+    disableTracking: true
+    submenu:
+
+  - &slavery_statement
+    label: "Slavery Statement & Policies"
+    url: "https://help.ft.com/help/legal/slavery-statement/"
+    submenu:
+
+  - &enterprise_tools
+    label: "Enterprise Tools"
+    url: "https://kat.ft.com/"
+    submenu:
+
+  - &about_us_careers
+    label: "Careers"
+    url: "https://aboutus.ft.com/en-gb/careers/"
+    submenu:

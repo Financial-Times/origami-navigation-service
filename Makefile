@@ -55,4 +55,5 @@ test-unit-coverage:
 
 # Run the integration tests using mocha
 test-integration:
+	npm run build
 	@if [ -d test/integration ]; then mocha "test/integration/**/*.test.js" --recursive --bail --exit ${CI:+--forbid-only} --timeout $(INTEGRATION_TIMEOUT) --slow $(INTEGRATION_SLOW) $(INTEGRATION_FLAGS) && $(TASK_DONE); fi

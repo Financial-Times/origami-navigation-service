@@ -1,0 +1,500 @@
+account:
+  label: Account
+  items:
+  - <<: *sign_in
+  - <<: *sign_out
+  - <<: *subscribe
+  - <<: *my_account
+  - <<: *my_ft
+  - <<: *portfolio
+
+
+drawer-uk:
+  label: Drawer
+  items:
+  - label: Top sections
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *home
+      - <<: *world
+        submenu: &world_submenu
+          label:
+          items:
+          - <<: *global_economy
+          - <<: *uk
+            submenu:
+              label:
+              items:
+              - <<: *uk_economy
+              - <<: *uk_politics_policy
+              - <<: *brexit
+              - <<: *uk_companies
+              - <<: *personal_finance
+          - <<: *us
+            submenu:
+              label:
+              items:
+              - <<: *us_economy
+              - <<: *us_companies
+              - <<: *us_politics_policy
+          - <<: *china
+            submenu:
+              label:
+              items:
+              - <<: *chinese_economy
+              - <<: *china_politics_policy
+          - <<: *africa
+          - <<: *asia_pacific
+          - <<: *emerging_markets
+          - <<: *europe
+          - <<: *latin_america
+          - <<: *middle_east_and_africa
+      - <<: *uk
+        submenu: &uk_submenu
+          label:
+          items:
+          - <<: *uk_economy
+          - <<: *uk_politics_policy
+          - <<: *brexit
+          - <<: *uk_companies
+          - <<: *personal_finance
+      - <<: *companies
+        submenu: &companies_submenu
+          label:
+          items:
+          - <<: *energy
+            submenu:
+              label:
+              items:
+              - <<: *mining
+              - <<: *oil_gas
+              - <<: *utilities
+          - <<: *financials
+            submenu:
+              label:
+              items:
+              - <<: *banks
+              - <<: *insurance
+              - <<: *property
+              - <<: *financial_services
+          - <<: *health
+            submenu:
+              label:
+              items:
+              - <<: *health_care
+              - <<: *pharmaceuticals
+          - <<: *industrials
+            submenu:
+              label:
+              items:
+              - <<: *aerospace_defence
+              - <<: *automobiles
+              - <<: *basic_resources
+              - <<: *chemicals
+              - <<: *construction
+              - <<: *industrial_goods
+              - <<: *support_services
+          - <<: *media
+          - <<: *professional_services
+            submenu:
+              label:
+              items:
+              - <<: *accounting_consulting_services
+              - <<: *legal_services
+              - <<: *recruitment_services
+          - <<: *retail_consumer
+            submenu:
+              label:
+              items:
+              - <<: *food_beverage
+              - <<: *luxury_goods
+              - <<: *personal_household_goods
+              - <<: *retail
+              - <<: *tobacco
+              - <<: *travel_leisure
+          - <<: *tech_sector
+          - <<: *telecoms
+          - <<: *transport
+            submenu:
+              label:
+              items:
+              - <<: *airlines
+              - <<: *shipping
+              - <<: *rail
+      - <<: *technology
+      - <<: *markets
+        submenu: &markets_submenu
+          label:
+          items:
+          - <<: *alphaville
+          - <<: *markets_data
+          - <<: *capital_markets
+          - <<: *commodities
+            submenu:
+              label:
+              items:
+              - <<: *oil
+              - <<: *gold
+              - <<: *copper
+          - <<: *currencies
+            submenu:
+              label:
+              items:
+              - <<: *usdollar
+              - <<: *euro
+              - <<: *poundsterling
+              - <<: *renminbi
+              - <<: *yen
+          - <<: *equities
+            submenu:
+              label:
+              items:
+              - <<: *us_equities
+              - <<: *uk_equities
+              - <<: *european_equities
+              - <<: *asia_pacific_equities
+          - <<: *fund_management
+            submenu:
+              label:
+              items:
+              - <<: *ftfm
+              - <<: *funds_regulation
+              - <<: *pensions_industry
+          - <<: *trading
+            submenu:
+              label:
+              items:
+              - <<: *clearing_settlement
+              - <<: *high_frequency_trading
+              - <<: *markets_regulation
+              - <<: *otc_markets
+              - <<: *derivatives
+          - <<: *moral_money
+          - <<: *etf_hub
+          - <<: *cryptocurrencies
+      - <<: *climate_capital
+      - <<: *opinion
+        submenu: &opinion_submenu
+          label:
+          items:
+          - <<: *columnists
+          - <<: *ft_view
+          - <<: *the_big_read
+          - <<: *lex
+          - <<: *obituaries
+          - <<: *letters
+      - <<: *work_careers
+        submenu: &work_careers_submenu
+          label:
+          items:
+          - <<: *business_school_rankings
+          - <<: *business_education
+            submenu:
+              label:
+              items:
+              - <<: *business_school_rankings
+          - <<: *entrepreneurship
+          - <<: *recruitment
+          - <<: *business_books
+          - <<: *business_travel
+      - <<: *life_arts
+        submenu: &life_arts_submenu
+          label:
+          items:
+          - <<: *arts
+            submenu:
+              label:
+              items:
+              - <<: *architecture
+              - <<: *collecting
+              - <<: *dance
+              - <<: *design
+              - <<: *film
+              - <<: *music
+              - <<: *television
+              - <<: *theatre
+              - <<: *visual_arts
+          - <<: *books
+            submenu:
+              label:
+              items:
+              - <<: *business_books
+              - <<: *fiction
+              - <<: *non_fiction
+          - <<: *food_drink
+            submenu:
+              label:
+              items:
+              - <<: *wine
+              - <<: *recipes
+              - <<: *restaurants
+          - <<: *magazine
+            submenu:
+              label:
+              items:
+              - <<: *special_editions
+          - <<: *house_home
+          - <<: *style
+            submenu:
+              label:
+              items:
+              - <<: *fashion_shows
+              - <<: *art_fashion
+          - <<: *travel
+            submenu:
+              label:
+              items:
+              - <<: *adventures
+              - <<: *cycling_tours
+              - <<: *city_breaks
+              - <<: *winter_breaks
+          - <<: *globetrotter
+            submenu:
+              label:
+              items:
+              - <<: *globetrotterlondon
+              - <<: *globetrotterparis
+              - <<: *globetrotterrome
+              - <<: *globetrotterfrankfurt
+              - <<: *globetrotternewyorkcity
+              - <<: *globetrotterhongkong
+              - <<: *globetrottertokyo
+              - <<: *globetrottersingapore
+      - <<: *personal_finance
+        submenu: &personal_finance_submenu
+          label:
+          items:
+          - <<: *property_mortgages
+          - <<: *investments
+          - <<: *pensions
+          - <<: *tax
+          - <<: *banking_savings
+          - <<: *advice&comment
+          - <<: *nextact
+      - <<: *how_to_spend_it
+      - <<: *special_reports
+  - label: FT recommends
+    url:
+    submenu: &recommends_submenu
+      label:
+      items:
+      - <<: *graphics
+      - <<: *lex
+      - <<: *alphaville
+      - <<: *lunch_with_the_ft
+      - <<: *globetrotter
+      - <<: *tsa
+      - <<: *moral_money
+      - <<: *ftfm
+      - <<: *newsletters
+      - <<: *video
+      - <<: *podcasts
+      - <<: *newsfeed
+      - <<: *ft_community_relative
+  - label:
+    url:
+    submenu: &extras_submenu
+      label:
+      items:
+      - <<: *my_ft
+      - <<: *portfolio
+      - <<: *epaper
+      - <<: *crossword
+      - <<: *apps
+
+drawer-international:
+  label: Drawer
+  items:
+  - label: Top sections
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *home
+      - <<: *world
+        submenu: *world_submenu
+      - <<: *us
+        submenu: &us_submenu
+          label:
+          items:
+          - <<: *us_economy
+          - <<: *us_companies
+          - <<: *us_politics_policy
+      - <<: *companies
+        submenu: *companies_submenu
+      - <<: *technology
+      - <<: *markets
+        submenu: *markets_submenu
+      - <<: *climate_capital
+      - <<: *opinion
+        submenu: *opinion_submenu
+      - <<: *work_careers
+        submenu: *work_careers_submenu
+      - <<: *life_arts
+        submenu: *life_arts_submenu
+      - <<: *personal_finance
+        submenu: *personal_finance_submenu
+      - <<: *how_to_spend_it
+      - <<: *special_reports
+  - label: FT recommends
+    url:
+    submenu: *recommends_submenu
+  - label:
+    url:
+    submenu: *extras_submenu
+
+
+user:
+  label: User
+  items:
+  - <<: *help
+  - <<: *my_account
+  - <<: *contact_preferences
+  - <<: *sign_out
+
+
+anon:
+  label: Anon
+  items:
+  - <<: *help
+  - <<: *anon_subscribe
+  - <<: *sign_in
+
+
+footer:
+  label: Footer
+  items:
+  - label: Support
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *view_site_tips
+      - <<: *help
+      - <<: *contact_us
+      - <<: *about_us
+      - <<: *accessibility
+      - <<: *myft_tour
+      - <<: *about_us_careers
+  - label: Legal & Privacy
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *terms_conditions
+      - <<: *privacy
+      - <<: *cookies
+      - <<: *copyright
+      - <<: *slavery_statement
+  - label: Services
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *securedrop
+      - <<: *individual_subscriptions
+      - <<: *group_subscriptions
+      - <<: *republishing
+      - <<: *contracts_tenders
+      - <<: *executive_job_search
+      - <<: *advertise_with_the_ft
+      - <<: *ft_twitter
+      - <<: *ft_transact
+      - <<: *secondary_schools
+  - label: Tools
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *portfolio
+        submenu:
+      - <<: *epaper
+        submenu:
+      - <<: *alerts_hub
+        submenu:
+      - <<: *business_school_rankings
+        submenu:
+      - <<: *enterprise_tools
+        submenu:
+      - <<: *newsfeed
+        submenu:
+      - <<: *newsletters
+        submenu:
+      - <<: *currency_converter
+        submenu:
+  - label: Community & Events
+    url:
+    submenu:
+      label:
+      items:
+      - <<: *ft_community
+      - <<: *ft_live
+      - <<: *ft_forums
+      - <<: *board_director_programme
+
+navbar-simple:
+  label: Navigation
+  items:
+  - <<: *home
+  - <<: *markets_data
+
+
+navbar-right:
+  label: Navigation
+  items:
+  - <<: *portfolio
+  - <<: *my_account
+
+
+navbar-right-anon:
+  label: Navigation
+  items:
+  - <<: *sign_in
+  - <<: *header_subscribe
+
+
+navbar-uk:
+  label: Navigation
+  items:
+  - <<: *home
+  - <<: *world
+    submenu: *world_submenu
+  - <<: *uk
+    submenu: *uk_submenu
+  - <<: *companies
+    submenu: *companies_submenu
+  - <<: *technology
+  - <<: *markets
+    submenu: *markets_submenu
+  - <<: *climate_capital
+  - <<: *opinion
+    submenu: *opinion_submenu
+  - <<: *work_careers
+    submenu: *work_careers_submenu
+  - <<: *life_arts
+    submenu: *life_arts_submenu
+  - <<: *how_to_spend_it
+
+navbar-international:
+  label: Navigation
+  items:
+  - <<: *home
+  - <<: *world
+    submenu: *world_submenu
+  - <<: *us
+    submenu: *us_submenu
+  - <<: *companies
+    submenu: *companies_submenu
+  - <<: *technology
+  - <<: *markets
+    submenu: *markets_submenu
+  - <<: *climate_capital
+  - <<: *opinion
+    submenu: *opinion_submenu
+  - <<: *work_careers
+    submenu: *work_careers_submenu
+  - <<: *life_arts
+    submenu: *life_arts_submenu
+  - <<: *how_to_spend_it

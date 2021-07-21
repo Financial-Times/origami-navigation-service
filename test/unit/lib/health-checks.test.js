@@ -32,7 +32,6 @@ describe('lib/health-checks', () => {
 
 		beforeEach(() => {
 			options = {
-				navigationDataStore: 'http://navigationdatastore/',
 				log: log
 			};
 			instance = healthChecks(options);
