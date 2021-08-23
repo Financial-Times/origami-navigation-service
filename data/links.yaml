@@ -1343,7 +1343,7 @@ links:
 
   - &secondary_schools
     label: "Secondary Schools"
-    url: "https://enterprise.ft.com/en-gb/services/group-subscriptions/education/"
+    url: "https://enterprise.ft.com/en-gb/services/group-subscriptions/secondary-education/"
     submenu:
 
   - &agenda
