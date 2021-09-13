@@ -292,6 +292,12 @@ drawer-uk:
       - <<: *podcasts
       - <<: *newsfeed
       - <<: *ft_community_relative
+        submenu: &ft_community_submenu
+          label:
+          items:
+          - <<: *ft_live
+          - <<: *ft_forums
+          - <<: *board_director_programme
   - label:
     url:
     submenu: &extras_submenu
