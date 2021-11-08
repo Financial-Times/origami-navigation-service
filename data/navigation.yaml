@@ -27,7 +27,6 @@ drawer-uk:
             submenu:
               label:
               items:
-              - <<: *uk_economy
               - <<: *uk_politics_policy
               - <<: *brexit
               - <<: *uk_companies
