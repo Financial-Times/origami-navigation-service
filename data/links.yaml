@@ -226,6 +226,11 @@ links:
     url: "/world/asia-pacific/north-korea"
     submenu:
 
+  - &ukraine_conflict
+    label: "Ukraine conflict"
+    url: "/ukraine-conflict"
+    submenu:
+
   - &africa
     label: "Africa"
     url: "/world/africa"
