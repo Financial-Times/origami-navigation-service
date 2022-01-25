@@ -49,6 +49,10 @@ drawer-uk:
           - <<: *asia_pacific
           - <<: *emerging_markets
           - <<: *europe
+            submenu:
+              label:
+              items:
+              - <<: *ukraine_conflict
           - <<: *latin_america
           - <<: *middle_east_and_africa
           - <<: *ukraine_conflict
