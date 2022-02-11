@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@financial-times/health-check": "^2.1.8",
-    "@financial-times/origami-service": "^5.0.1",
+    "@financial-times/origami-service": "^5.0.2",
     "@financial-times/origami-service-makefile": "^7.0.3",
     "@financial-times/source-param-middleware": "^2.0.0",
     "dotenv": "^8",
@@ -43,25 +43,25 @@
     "throng": "^4.0.0"
   },
   "devDependencies": {
+    "@financial-times/grafana-tools": "^2.0.1",
     "@financial-times/origami-service-makefile": "^7.0.3",
     "@financial-times/release-log": "^1.1.5",
     "@quarterto/git-version-infer": "^6.0.0",
     "ajv": "^4.10.0",
+    "eslint": "^7.25.0",
     "fs-extra": "^10.0.0",
     "heads": "^1.2.0",
+    "istanbul": "^0.4",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.5",
-    "throat": "^6.0.1",
-    "@financial-times/grafana-tools": "^2.0.1",
-    "eslint": "^7.25.0",
-    "istanbul": "^0.4",
     "mocha": "^8.3.2",
     "mockery": "^2",
     "nodemon": "^2.0.7",
     "proclaim": "^3.6.0",
     "sinon": "^1",
     "sinon-as-promised": "^4",
-    "supertest": "^6.1.3"
+    "supertest": "^6.1.3",
+    "throat": "^6.0.1"
   },
   "snyk": true
 }
