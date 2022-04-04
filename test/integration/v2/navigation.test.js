@@ -20,3 +20,17 @@ describe('GET /v2/navigation.json', function () {
 	});
 
 });
+describe('GET /__origami/service/navigation/v2/navigation.json', function () {
+	setupRequest('GET', '/__origami/service/navigation/v2/navigation.json');
+	itRespondsWithStatus(200);
+	itRespondsWithContentType('application/json');
+
+	it('responds with the navigation JSON', function(done) {
+		this.request.expect(response => {
+			assert.isString(response.text);
+			const json = JSON.parse(response.text);
+			assert.deepEqual(json, navigation);
+		}).end(done);
+	});
+
+});

@@ -19,11 +19,9 @@ describe('GET /v2/', function () {
 
 });
 
-describe('GET /v2/ with an FT-Origami-Service-Base-Path header', function() {
+describe('GET /__origami/service/navigation/v2/', function () {
 
-	setupRequest('GET', '/v2/', {
-		'FT-Origami-Service-Base-Path': '/foo/bar/'
-	});
+	setupRequest('GET', '/__origami/service/navigation/v2/');
 	itRespondsWithStatus(200);
 	itRespondsWithContentType('text/html');
 

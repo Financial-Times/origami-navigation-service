@@ -7,3 +7,8 @@ describe('GET /v1/', function () {
 	setupRequest('GET', '/v1/');
 	itRespondsWithStatus(410);
 });
+
+describe('GET /__origami/service/navigation/v1/', function () {
+	setupRequest('GET', '/__origami/service/navigation/v1/');
+	itRespondsWithStatus(410);
+});
