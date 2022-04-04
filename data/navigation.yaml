@@ -412,7 +412,6 @@ footer:
       - <<: *individual_subscriptions
       - <<: *group_subscriptions
       - <<: *republishing
-      - <<: *contracts_tenders
       - <<: *executive_job_search
       - <<: *advertise_with_the_ft
       - <<: *ft_twitter

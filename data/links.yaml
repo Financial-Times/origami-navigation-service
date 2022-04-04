@@ -180,7 +180,7 @@ links:
     label: "European Union"
     url: "/european-union"
     submenu:
-    
+
   - &frenchelection
     label: "French Presidential Election"
     url: "/french-presidential-election"
@@ -214,11 +214,6 @@ links:
   - &china_politics_policy
     label: "China Politics & Policy"
     url: "/chinese-politics-policy"
-    submenu:
-
-  - &india
-    label: "India"
-    url: "/world/asia-pacific/india"
     submenu:
 
   - &japan
@@ -344,7 +339,7 @@ links:
   - &energy_source
     label: "Energy Source"
     url: "/energy-source"
-    submenu:    
+    submenu:
 
   - &retail_consumer
     label: "Retail & Consumer"
@@ -599,11 +594,6 @@ links:
   - &ftfm
     label: "FTfm"
     url: "/ftfm"
-    submenu:
-
-  - &investment_strategy
-    label: "Investment Strategy"
-    url: "/ftfm/investment-strategy"
     submenu:
 
   - &people_in_fund_management
@@ -1331,11 +1321,6 @@ links:
     url: "https://enterprise.ft.com/en-gb/services/republishing/"
     submenu:
 
-  - &contracts_tenders
-    label: "Contracts & Tenders"
-    url: "http://www.businessesforsale.com/ft2/notices"
-    submenu:
-
   - &executive_job_search
     label: "Executive Job Search"
     url: "https://www.exec-appointments.com/"
@@ -1376,29 +1361,14 @@ links:
     url: "http://agendaweek.com/"
     submenu:
 
-  - &analyse_africa
-    label: "Analyse Africa"
-    url: "https://www.analyseafrica.com/"
-    submenu:
-
   - &board_iq
     label: "Board IQ"
     url: "https://www.boardiq.com/"
     submenu:
 
-  - &corporate_learning_alliance
-    label: "Corporate Learning Alliance"
-    url: "http://www.ftiecla.com/"
-    submenu:
-
   - &dpn
     label: "DPN: Deutsche Pensions & Investment Nachrichten"
     url: "http://www.dpn-online.com/"
-    submenu:
-
-  - &execsense
-    label: "ExecSense"
-    url: "https://www.execsense.com/"
     submenu:
 
   - &fdi_intelligence
@@ -1489,16 +1459,6 @@ links:
     url: "https://www.nyif.com/"
     submenu:
 
-  - &non_executive_directors_club
-    label: "Non Executive Directors Club"
-    url: "https://www.non-execs.com/"
-    submenu:
-
-  - &pensions_expert
-    label: "Pensions Expert"
-    url: "http://www.pensions-expert.com/"
-    submenu:
-
   - &professional_wealth_management
     label: "Professional Wealth Management"
     url: "https://www.pwmnet.com/"
@@ -1517,11 +1477,6 @@ links:
   - &the_banker_database
     label: "The Banker Database"
     url: "https://www.thebankerdatabase.com/"
-    submenu:
-
-  - &this_is_africa
-    label: "This is Africa"
-    url: "https://www.thisisafricaonline.com/"
     submenu:
 
   - &collecting
