@@ -1404,10 +1404,19 @@ links:
     url: "https://forums.ft.com/"
     submenu:
 
+  - &ft_board_director_community
+    label: "FT Board Director (community)"
+    url: "https://enterprise.ft.com/board-director-membership"
+    submenu:
+
   - &board_director_programme
     label: "Board Director Programme"
     url: "https://bdp.ft.com/"
     submenu:
+
+  - &board_director_programme_training
+    <<: *board_director_programme
+    label: "Board Director Programme (training)"
 
   - &ft_advisor
     label: "FT Adviser"
