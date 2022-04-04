@@ -24,7 +24,7 @@
     "build": "node ./src/cli.js --file data/links.yaml --file data/navigation.yaml",
     "test": "make test",
     "start": "heroku-node-settings index.js",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
@@ -32,13 +32,13 @@
     "@financial-times/origami-service": "^5.0.2",
     "@financial-times/origami-service-makefile": "^7.0.3",
     "@financial-times/source-param-middleware": "^2.0.0",
+    "@snyk/protect": "^1.893.0",
     "dotenv": "^16",
     "express": "^4.17.3",
     "heroku-node-settings": "^1.1.0",
     "http-errors": "^2",
     "request": "^2.88.2",
     "require-all": "^3",
-    "snyk": "^1.893.0",
     "statuses": "^2.0.1",
     "throng": "^5.0.0"
   },
