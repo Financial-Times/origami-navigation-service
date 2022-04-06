@@ -446,8 +446,8 @@ footer:
       - <<: *ft_community
       - <<: *ft_live
       - <<: *ft_forums
-      - <<: *ft_board_director_community
-      - <<: *board_director_programme_training
+      - <<: *ft_board_director
+      - <<: *board_director_programme
 
 navbar-simple:
   label: Navigation
