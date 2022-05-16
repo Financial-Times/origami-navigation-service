@@ -1435,7 +1435,7 @@ links:
     submenu:
 
   - &how_to_spend_it
-    label: "How to Spend It"
+    label: "HTSI"
     url: "/htsi"
     submenu:
 
