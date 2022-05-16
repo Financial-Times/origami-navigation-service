@@ -527,7 +527,7 @@ links:
     submenu:
 
   - &digitalassetdashboard
-    label: "Digital assets dashboard"
+    label: "Digital Assets Dashboard"
     url: "https://digitalassets.ft.com"
     submenu:
 
