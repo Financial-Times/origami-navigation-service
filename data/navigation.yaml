@@ -285,7 +285,7 @@ drawer-uk:
           - <<: *banking_savings
           - <<: *advice&comment
           - <<: *nextact
-      - <<: *how_to_spend_it
+      - <<: *htsi
       - <<: *special_reports
   - label: FT recommends
     url:
@@ -353,7 +353,7 @@ drawer-international:
         submenu: *life_arts_submenu
       - <<: *personal_finance
         submenu: *personal_finance_submenu
-      - <<: *how_to_spend_it
+      - <<: *htsi
       - <<: *special_reports
   - label: FT recommends
     url:
@@ -492,7 +492,7 @@ navbar-uk:
     submenu: *work_careers_submenu
   - <<: *life_arts
     submenu: *life_arts_submenu
-  - <<: *how_to_spend_it
+  - <<: *htsi
 
 navbar-international:
   label: Navigation
@@ -514,4 +514,5 @@ navbar-international:
     submenu: *work_careers_submenu
   - <<: *life_arts
     submenu: *life_arts_submenu
-  - <<: *how_to_spend_it
+  - <<: *htsi
+  
