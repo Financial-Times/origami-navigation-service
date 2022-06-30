@@ -417,7 +417,7 @@ footer:
       - <<: *executive_job_search
       - <<: *advertise_with_the_ft
       - <<: *ft_twitter
-      - <<: *ft_transact
+      - <<: *ft_channels
       - <<: *secondary_schools
   - label: Tools
     url:
