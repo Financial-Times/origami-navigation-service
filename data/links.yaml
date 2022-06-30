@@ -1351,9 +1351,9 @@ links:
     url: "https://markets.ft.com/research/Markets/Currencies?segid=70113"
     submenu:
 
-  - &ft_transact
-    label: "FT Transact"
-    url: "https://transact.ft.com/"
+  - &ft_channels
+    label: "FT Channels"
+    url: "https://channels.ft.com/"
     submenu:
 
   - &secondary_schools
