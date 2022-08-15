@@ -991,6 +991,11 @@ links:
     url: "/globetrotter/singapore"
     submenu:
 
+  - &globetrottertoronto
+    label: "Toronto"
+    url: "/globetrotter/toronto"
+    submenu:
+
   - &style
     label: "Style"
     url: "/style"

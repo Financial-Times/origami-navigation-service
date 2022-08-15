@@ -274,6 +274,7 @@ drawer-uk:
               - <<: *globetrotterhongkong
               - <<: *globetrottertokyo
               - <<: *globetrottersingapore
+              - <<: *globetrottertoronto
       - <<: *personal_finance
         submenu: &personal_finance_submenu
           label:
