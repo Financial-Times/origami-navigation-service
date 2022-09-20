@@ -6,22 +6,22 @@ module.exports.getPageNavigation = () => {
 			{
 				'id': 'overview',
 				'name': 'Overview',
-				'href': 'v2'
+				'href': '/__origami/service/navigation/v2'
 			},
 			{
 				'id': 'api',
 				'name': 'API Reference',
-				'href': 'v2/docs/api'
+				'href': '/__origami/service/navigation/v2/docs/api'
 			},
 			{
 				'id': 'migration',
 				'name': 'Migration Guide',
-				'href': 'v2/docs/migration'
+				'href': '/__origami/service/navigation/v2/docs/migration'
 			},
 			{
 				'id': 'example',
 				'name': 'Example',
-				'href': 'v2/docs/example'
+				'href': '/__origami/service/navigation/v2/docs/example'
 			}
 		]
 	};
