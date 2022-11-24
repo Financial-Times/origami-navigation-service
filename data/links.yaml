@@ -118,7 +118,7 @@ links:
 
   - &uk_companies
     label: "UK Companies"
-    url: "/companies/uk"
+    url: "/uk-companies"
     submenu:
 
   - &uk_small_companies
@@ -293,7 +293,7 @@ links:
 
   - &tech_sector
     label: "Tech Sector"
-    url: "/companies/technology"
+    url: "/technology-sector"
     submenu:
 
   - &financials
@@ -348,27 +348,28 @@ links:
 
   - &retail_consumer
     label: "Retail & Consumer"
-    url: "/companies/retail-consumer"
+    url: "/retail-consumer"
     submenu:
 
   - &food_beverage
     label: "Food & Beverage"
-    url: "/companies/food-beverage"
+    url: "/food-beverage"
     submenu:
 
   - &luxury_goods
-    label: 'Luxury Goods'
-    url: '/companies/luxury-goods'
+    label: "Luxury Goods"
+    url: "/luxury-goods"
     submenu:
+
 
   - &personal_household_goods
     label: "Personal & Household Goods"
-    url: "/companies/personal-goods"
+    url: "/personal-household-goods"
     submenu:
 
   - &professional_services
     label: "Professional Services"
-    url: "/companies/professional-services"
+    url: "/professional-services"
     submenu:
 
   - &accounting_consulting_services
@@ -378,27 +379,27 @@ links:
 
   - &legal_services
     label: "Legal Services"
-    url: "/companies/legal-services"
+    url: "/legal-services"
     submenu:
 
   - &recruitment_services
     label: "Recruitment Services"
-    url: "/companies/recruitment-services"
+    url: "/recruitment-services"
     submenu:
 
   - &retail
     label: "Retail"
-    url: "/companies/retail"
+    url: "/retail"
     submenu:
 
   - &tobacco
     label: "Tobacco"
-    url: "/companies/tobacco"
+    url: "/tobacco"
     submenu:
 
   - &travel_leisure
     label: "Travel & Leisure"
-    url: "/companies/travel-leisure"
+    url: "/travel-leisure"
     submenu:
 
   - &industrials
@@ -428,22 +429,22 @@ links:
 
   - &construction
     label: "Construction"
-    url: "/companies/construction"
+    url: "/construction"
     submenu:
 
   - &industrial_goods
     label: "Industrial Goods"
-    url: "/companies/industrial-goods"
+    url: "/industrial-goods"
     submenu:
 
   - &support_services
     label: "Support Services"
-    url: "/companies/support-services"
+    url: "/support-services"
     submenu:
 
   - &telecoms
     label: "Telecoms"
-    url: "/companies/telecoms"
+    url: "/telecoms"
     submenu:
 
   - &health
@@ -463,27 +464,27 @@ links:
 
   - &media
     label: "Media"
-    url: "/companies/media"
+    url: "/media"
     submenu:
 
   - &transport
     label: "Transport"
-    url: "/companies/transport"
+    url: "/transport"
     submenu:
 
   - &airlines
     label: "Airlines"
-    url: "/companies/airlines"
+    url: "/airlines"
     submenu:
 
   - &shipping
     label: "Shipping"
-    url: "/companies/shipping"
+    url: "/shipping"
     submenu:
 
   - &rail
     label: "Rail"
-    url: "/companies/rail"
+    url: "/rail"
     submenu:
 
   - &fastft
