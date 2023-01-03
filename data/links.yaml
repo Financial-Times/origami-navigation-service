@@ -1229,7 +1229,7 @@ links:
 
   - &my_account
     label: "Settings & Account"
-    url: "https://www.ft.com/myaccount"
+    url: "/myaccount"
     submenu:
 
   - &contact_preferences
