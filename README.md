@@ -39,7 +39,7 @@ Steps to edit navigation data:
 Requirements
 ------------
 
-Running Origami Navigation Service requires [Node.js] 10 and [npm].
+Running Origami Navigation Service requires [Node.js] and [npm].
 
 
 Running Locally
