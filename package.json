@@ -20,7 +20,7 @@
   },
   "main": "./lib/navigation-service.js",
   "scripts": {
-    "build": "node ./src/cli.js --file data/links.yaml --file data/navigation.yaml",
+    "build": "node ./src/cli.js --file data/links.yaml --file data/navigation.yaml && npx esbuild ./src/example-header.tsx --bundle --platform=node --jsx=automatic | node | tee ./views/partials/build/o-header.html",
     "test": "make test",
     "start": "heroku-node-settings index.js",
     "snyk-protect": "snyk-protect",
@@ -48,7 +48,8 @@
     "@quarterto/git-version-infer": "^6.0.0",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
-    "eslint": "^8.32.0",
+    "esbuild": "^0.17.0",
+    "eslint": "^8.31.0",
     "fs-extra": "^11.1.0",
     "heads": "^1.3.0",
     "istanbul": "^0.4",
@@ -58,6 +59,7 @@
     "mockery": "^2",
     "nodemon": "^2.0.20",
     "proclaim": "^3.6.0",
+    "react-dom": "^18.2.0",
     "sinon": "^15",
     "supertest": "^6.3.3",
     "throat": "^6.0.2"
