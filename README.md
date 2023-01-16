@@ -36,6 +36,15 @@ Steps to edit navigation data:
 - Press the "Create pull request" button
 - Someone from [Origami](https://github.com/orgs/Financial-Times/teams/origami-core) will review your changes before merging them into production
 
+How to update example markup
+---------------------------
+
+The [Origami Navigation Service example page](https://www.ft.com/__origami/service/navigation/v2/docs/example) displays [o-header](https://registry.origami.ft.com/components/o-header) and [o-footer](https://registry.origami.ft.com/components/o-footer) components populated with the latest navigation data.
+
+To update the example page update the [Handlebars](https://handlebarsjs.com/) templates within the `/views` directory. Do not manually edit `views/partials/build`, files in this directory are generated using `npm run build`. This allows us to generate HTML for [o-header](https://registry.origami.ft.com/components/o-header) using its TSX templates, which can then be included within our Handlebars templates. At the time of writing [o-footer](https://registry.origami.ft.com/components/o-footer) does not yet provide TSX templates.
+
+_Note: Some users choose to copy markup from the example page to get a snapshot of navigation data for o-header and o-footer components, though we do not recommend this in most cases as the data quickly becomes out of date._
+
 Requirements
 ------------
 
