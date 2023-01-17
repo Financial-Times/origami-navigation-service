@@ -20,7 +20,7 @@
   },
   "main": "./lib/navigation-service.js",
   "scripts": {
-    "build": "node ./src/cli.js --file data/links.yaml --file data/navigation.yaml && mkdir -p views/partials/build && npx esbuild ./src/example-header.tsx --bundle --platform=node --jsx=automatic | node | tee ./views/partials/build/o-header.html",
+    "build": "node ./src/cli.js --file data/links.yaml --file data/navigation.yaml && npx esbuild ./src/example-header.tsx --bundle --platform=node --jsx=automatic | node | tee ./views/partials/build/o-header.html",
     "test": "make test",
     "start": "heroku-node-settings index.js",
     "snyk-protect": "snyk-protect",
@@ -43,7 +43,6 @@
   },
   "devDependencies": {
     "@financial-times/grafana-tools": "^2.0.1",
-    "@financial-times/o-header": "^11.0.2",
     "@financial-times/origami-service-makefile": "^7.0.3",
     "@financial-times/release-log": "^1.1.5",
     "@quarterto/git-version-infer": "^6.0.0",
