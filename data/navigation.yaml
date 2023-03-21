@@ -69,6 +69,7 @@ drawer-uk:
           - <<: *personal_finance
       - <<: *companies
         submenu: &companies_submenu
+          - <<: *banksinturmoil
           label:
           items:
           - <<: *energy
