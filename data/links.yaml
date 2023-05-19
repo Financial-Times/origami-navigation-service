@@ -315,7 +315,7 @@ links:
     label: "Banks"
     url: "/banks"
     submenu:
-    
+
   - &banksinturmoil
     label: "Banks in turmoil"
     url: "/banks-in-turmoil"
@@ -986,12 +986,12 @@ links:
     label: "Toronto"
     url: "/globetrotter/toronto"
     submenu:
-    
+
   - &globetrottermadrid
     label: "Madrid"
     url: "/globetrotter/madrid"
     submenu:
-    
+
   - &globetrottercopenhagen
     label: "Copenhagen"
     url: "/globetrotter/copenhagen"
@@ -1382,8 +1382,8 @@ links:
     url: "https://channels.ft.com/"
     submenu:
 
-  - &secondary_schools
-    label: "Secondary Schools"
+  - &ft_schools
+    label: "FT Schools"
     url: "https://enterprise.ft.com/en-gb/services/group-subscriptions/secondary-education/"
     submenu:
 

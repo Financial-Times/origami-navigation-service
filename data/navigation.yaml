@@ -418,7 +418,7 @@ footer:
       - <<: *advertise_with_the_ft
       - <<: *ft_twitter
       - <<: *ft_channels
-      - <<: *secondary_schools
+      - <<: *ft_schools
   - label: Tools
     url:
     submenu:
