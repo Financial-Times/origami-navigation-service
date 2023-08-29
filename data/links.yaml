@@ -1229,7 +1229,7 @@ links:
 
   - &tools_services
     label: "Tools & Services"
-    url: "http://help.ft.com/help/tools-services/"
+    url: "https://help.ft.com/help/tools-services/"
     submenu:
 
   - &newsfeed
@@ -1299,7 +1299,7 @@ links:
 
   - &help
     label: "Help Centre"
-    url: "http://help.ft.com"
+    url: "https://help.ft.com"
     submenu:
 
   - &contact_us
@@ -1309,7 +1309,7 @@ links:
 
   - &about_us
     label: "About Us"
-    url: "http://www.ft.com/aboutus"
+    url: "https://www.ft.com/aboutus"
     submenu:
 
   - &accessibility
@@ -1324,37 +1324,37 @@ links:
 
   - &terms_conditions
     label: "Terms & Conditions"
-    url: "http://help.ft.com/help/legal-privacy/terms-conditions/"
+    url: "https://help.ft.com/help/legal-privacy/terms-conditions/"
     submenu:
 
   - &privacy
     label: "Privacy Policy"
-    url: "http://help.ft.com/help/legal-privacy/privacy/"
+    url: "https://help.ft.com/help/legal-privacy/privacy/"
     submenu:
 
   - &cookies
     label: "Cookies"
-    url: "http://help.ft.com/help/legal-privacy/cookies/"
+    url: "https://help.ft.com/help/legal-privacy/cookies/"
     submenu:
 
   - &copyright
     label: "Copyright"
-    url: "http://help.ft.com/help/legal-privacy/copyright/copyright-policy/"
+    url: "https://help.ft.com/help/legal-privacy/copyright/copyright-policy/"
     submenu:
 
   - &editorial_code
     label: "FT Editorial Code of Practice"
-    url: "http://aboutus.ft.com/company/our-standards/editorial-code"
+    url: "https://aboutus.ft.com/company/our-standards/editorial-code"
     submenu:
 
   - &conferences_events
     label: "FT Live"
-    url: "http://live.ft.com/"
+    url: "https://live.ft.com/"
     submenu:
 
   - &individual_subscriptions
     label: "Individual Subscriptions"
-    url: "http://www.ft.com/products"
+    url: "https://www.ft.com/products"
     submenu:
 
   - &professional_subscriptions
@@ -1384,7 +1384,7 @@ links:
 
   - &alerts_hub
     label: "Alerts Hub"
-    url: "http://markets.ft.com/data/alerts/"
+    url: "https://markets.ft.com/data/alerts/"
     submenu:
 
   - &currency_converter
@@ -1404,7 +1404,7 @@ links:
 
   - &agenda
     label: "Agenda"
-    url: "http://agendaweek.com/"
+    url: "https://agendaweek.com/"
     submenu:
 
   - &board_iq
@@ -1414,7 +1414,7 @@ links:
 
   - &dpn
     label: "DPN: Deutsche Pensions & Investment Nachrichten"
-    url: "http://www.dpn-online.com/"
+    url: "https://www.dpn-online.com/"
     submenu:
 
   - &fdi_intelligence
@@ -1429,7 +1429,7 @@ links:
 
   - &ft_chinese
     label: "FT Chinese"
-    url: "http://www.ftchinese.com/"
+    url: "https://www.ftchinese.com/"
     submenu:
 
   - &ft_community
@@ -1518,7 +1518,7 @@ links:
 
   - &the_banker
     label: "The Banker"
-    url: "http://www.thebanker.com/"
+    url: "https://www.thebanker.com/"
     submenu:
 
   - &the_banker_database
