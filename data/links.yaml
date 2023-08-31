@@ -1443,7 +1443,7 @@ links:
 
   - &ft_live_events
     label: "FT Live Events"
-    url: "https://events.ft.com/events-list "
+    url: "https://events.ft.com/events-list"
     submenu:
 
   - &ft_forums
