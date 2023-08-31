@@ -1441,6 +1441,11 @@ links:
     <<: *conferences_events
     label: "FT Live Events"
 
+  - &ft_live_events
+    label: "FT Live Events"
+    url: "https://events.ft.com/events-list "
+    submenu:
+
   - &ft_forums
     label: "FT Forums"
     url: "https://forums.ft.com/"

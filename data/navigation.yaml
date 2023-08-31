@@ -309,7 +309,7 @@ drawer-uk:
       - <<: *video
       - <<: *podcasts
       - <<: *newsfeed
-      - <<: *ft_live
+      - <<: *ft_live_events
       - <<: *ft_forums
       - <<: *board_director_programme
   - label:
