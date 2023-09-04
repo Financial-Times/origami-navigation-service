@@ -448,7 +448,7 @@ footer:
       label:
       items:
       - <<: *ft_community
-      - <<: *ft_live
+      - <<: *ft_live_events
       - <<: *ft_forums
       - <<: *ft_board_director
       - <<: *board_director_programme
