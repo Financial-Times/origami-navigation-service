@@ -1347,11 +1347,6 @@ links:
     url: "https://aboutus.ft.com/company/our-standards/editorial-code"
     submenu:
 
-  - &conferences_events
-    label: "FT Live"
-    url: "https://live.ft.com/"
-    submenu:
-
   - &individual_subscriptions
     label: "Individual Subscriptions"
     url: "https://www.ft.com/products"
@@ -1436,10 +1431,6 @@ links:
     url: "https://www.ft.com/tour/community"
     submenu:
     label: "FT Community"
-
-  - &ft_live
-    <<: *conferences_events
-    label: "FT Live Events"
 
   - &ft_live_events
     label: "FT Live Events"
