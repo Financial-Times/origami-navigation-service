@@ -463,6 +463,7 @@ navbar-simple:
 navbar-right:
   label: Navigation
   items:
+  - <<: *digital_edition
   - <<: *portfolio
   - <<: *my_account
 

@@ -1192,6 +1192,11 @@ links:
     url: "/banking-savings"
     submenu:
 
+  - &digital_edition
+    label: "Digital Edition"
+    url: "https://www.ft.com/todaysnewspaper"
+    submenu:
+
   - &epaper
     label: "Today’s Newspaper (FT Digital Edition)"
     url: "https://www.ft.com/todaysnewspaper"
