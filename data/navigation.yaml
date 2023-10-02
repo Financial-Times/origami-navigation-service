@@ -280,6 +280,7 @@ drawer-uk:
               - <<: *globetrottersingapore
               - <<: *globetrottertokyo
               - <<: *globetrottertoronto
+              - <<: *globetrottervancouver
               - <<: *globetrotterzurich
       - <<: *personal_finance
         submenu: &personal_finance_submenu
