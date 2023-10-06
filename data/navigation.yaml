@@ -133,6 +133,13 @@ drawer-uk:
               - <<: *shipping
               - <<: *rail
       - <<: *technology
+        submenu: &technology_submenu
+          label:
+          items:
+          - <<: *ai
+          - <<: *semiconductors
+          - <<: *cybersecurity
+          - <<: *socialmedia
       - <<: *markets
         submenu: &markets_submenu
           label:
@@ -346,6 +353,7 @@ drawer-international:
       - <<: *companies
         submenu: *companies_submenu
       - <<: *technology
+        submenu: *technology_submenu
       - <<: *markets
         submenu: *markets_submenu
       - <<: *climate_capital
@@ -488,6 +496,7 @@ navbar-uk:
   - <<: *companies
     submenu: *companies_submenu
   - <<: *technology
+    submenu: *technology_submenu
   - <<: *markets
     submenu: *markets_submenu
   - <<: *climate_capital
@@ -510,6 +519,7 @@ navbar-international:
   - <<: *companies
     submenu: *companies_submenu
   - <<: *technology
+    submenu: *technology_submenu
   - <<: *markets
     submenu: *markets_submenu
   - <<: *climate_capital
