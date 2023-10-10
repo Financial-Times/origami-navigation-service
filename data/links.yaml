@@ -1363,8 +1363,13 @@ links:
     submenu:
 
   - &cookies
-    label: "Cookies"
+    label: "Cookie Policy"
     url: "https://help.ft.com/help/legal-privacy/cookies/"
+    submenu:
+
+  - &cookies
+    label: "Manage Cookies"
+    url: "https://www.ft.com/preferences/manage-cookies"
     submenu:
 
   - &copyright
