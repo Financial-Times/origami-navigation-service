@@ -1367,7 +1367,7 @@ links:
     url: "https://help.ft.com/help/legal-privacy/cookies/"
     submenu:
 
-  - &cookies
+  - &cookies_management
     label: "Manage Cookies"
     url: "https://www.ft.com/preferences/manage-cookies"
     submenu:
