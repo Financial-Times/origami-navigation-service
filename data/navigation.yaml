@@ -415,6 +415,7 @@ footer:
       - <<: *terms_conditions
       - <<: *privacy
       - <<: *cookies
+      - <<: *cookies_management
       - <<: *copyright
       - <<: *slavery_statement
   - label: Services
