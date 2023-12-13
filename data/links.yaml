@@ -1497,9 +1497,9 @@ links:
     url: "https://forums.ft.com/"
     submenu:
 
-  - &ft_board_director
-    label: "FT Board Director"
-    url: "https://enterprise.ft.com/board-director-membership"
+  - &ft_board_network
+    label: "FT Board Network"
+    url: "https://forums.ft.com/ft-board-network"
     submenu:
 
   - &board_director_programme
