@@ -177,7 +177,6 @@ drawer-uk:
             submenu:
               label:
               items:
-              - <<: *ftfm
               - <<: *funds_regulation
               - <<: *pensions_industry
           - <<: *ft_wealth_management
