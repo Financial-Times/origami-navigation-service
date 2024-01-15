@@ -172,13 +172,15 @@ drawer-uk:
               - <<: *uk_equities
               - <<: *european_equities
               - <<: *asia_pacific_equities
+          - <<: *moral_money
+          - <<: *ft_wealth_management
+          - <<: *etf_hub
           - <<: *fund_management
             submenu:
               label:
               items:
               - <<: *funds_regulation
               - <<: *pensions_industry
-          - <<: *ft_wealth_management
           - <<: *trading
             submenu:
               label:
@@ -188,8 +190,6 @@ drawer-uk:
               - <<: *markets_regulation
               - <<: *otc_markets
               - <<: *derivatives
-          - <<: *moral_money
-          - <<: *etf_hub
             submenu:
               label:
               items:
