@@ -1051,12 +1051,12 @@ links:
     label: "Vancouver"
     url: "/globetrotter/vancouver"
     submenu:
-  
+
   - &globetrottermilan
     label: "Milan"
     url: "/globetrotter/milan"
     submenu:
-  
+
   - &globetrotterzurich
     label: "Zurich"
     url: "/globetrotter/zurich"
@@ -1238,12 +1238,7 @@ links:
     submenu:
 
   - &digital_edition
-    label: "Digital Edition"
-    url: "https://www.ft.com/todaysnewspaper"
-    submenu:
-
-  - &epaper
-    label: "Today’s Newspaper (FT Digital Edition)"
+    label: "FT Digital Edition"
     url: "https://www.ft.com/todaysnewspaper"
     submenu:
 
@@ -1275,6 +1270,16 @@ links:
   - &apps
     label: 'Our Apps'
     url: 'https://www.ft.com/tour/apps'
+    submenu:
+
+  - &ft_app
+    label: 'Our Apps'
+    url: 'https://applink.ft.com/A6lV/2khsqyrh'
+    submenu:
+
+  - &ft_edit
+    label: 'FT Edit'
+    url: 'https://ftedit.ft.com/Ju3k/pqkac2ds'
     submenu:
 
   - &tools_services

@@ -329,7 +329,7 @@ drawer-uk:
       items:
       - <<: *my_ft
       - <<: *portfolio
-      - <<: *epaper
+      - <<: *digital_edition
       - <<: *crossword
       - <<: *apps
 
@@ -442,7 +442,11 @@ footer:
       items:
       - <<: *portfolio
         submenu:
-      - <<: *epaper
+      - <<: *ft_app
+        submenu:
+      - <<: *digital_edition
+        submenu:
+      - <<: *ft_edit
         submenu:
       - <<: *alerts_hub
         submenu:
