@@ -1273,7 +1273,7 @@ links:
     submenu:
 
   - &ft_app
-    label: 'Our Apps'
+    label: 'FT App'
     url: 'https://applink.ft.com/A6lV/2khsqyrh'
     submenu:
 
