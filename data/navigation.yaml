@@ -201,6 +201,7 @@ drawer-uk:
           items:
           - <<: *columnists
           - <<: *ft_view
+          - <<: *the_big_read
           - <<: *lex
           - <<: *obituaries
           - <<: *letters
