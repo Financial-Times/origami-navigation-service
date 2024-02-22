@@ -1167,6 +1167,11 @@ links:
     url: "/working-it"
     submenu:
 
+  - &europe_start-up_hubs 
+    label: "Europe's Start-Up Hubs"
+    url: "https://rankings.ft.com/incubator-accelerator-programmes-europe"
+    submenu:
+
   - &entrepreneurship
     label: "Entrepreneurship"
     url: "/entrepreneurship"
