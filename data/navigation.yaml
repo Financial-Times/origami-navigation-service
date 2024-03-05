@@ -32,6 +32,7 @@ drawer-uk:
               - <<: *uk_politics_policy
               - <<: *uk_companies
               - <<: *personal_finance
+              - <<: *ukbudget2024
           - <<: *us
             submenu:
               label:
