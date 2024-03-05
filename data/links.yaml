@@ -148,7 +148,7 @@ links:
 
   - &ukbudget2024
     label: "UK Budget 2024"
-    url: "//uk-budget-2024"
+    url: "/uk-budget-2024"
     submenu:
 
   - &ukelection
