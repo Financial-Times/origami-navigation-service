@@ -49,7 +49,7 @@
     "@financial-times/release-log": "^1.1.5",
     "@quarterto/git-version-infer": "^6.0.0",
     "ajv": "^8.12.0",
-    "ajv-formats": "^2.1.1",
+    "ajv-formats": "^3.0.1",
     "esbuild": "^0.20.2",
     "eslint": "^8.57.0",
     "fs-extra": "^11.2.0",
