@@ -32,7 +32,7 @@
     "@financial-times/origami-service": "^6.0.0",
     "@financial-times/origami-service-makefile": "^7.0.3",
     "@financial-times/source-param-middleware": "^2.0.0",
-    "@snyk/protect": "^1.1286.2",
+    "@snyk/protect": "^1.1286.3",
     "dotenv": "^16",
     "express": "^4.19.2",
     "heroku-node-settings": "^1.1.0",
