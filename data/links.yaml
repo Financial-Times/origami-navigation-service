@@ -1137,6 +1137,11 @@ links:
     url: "/business-education"
     submenu:
 
+  - &business_school
+    label: "Business School"
+    url: "/business-school"
+    submenu:
+
   - &business_school_rankings
     label: 'Business School Rankings'
     url: 'https://rankings.ft.com/'
