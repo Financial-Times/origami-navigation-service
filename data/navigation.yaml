@@ -215,6 +215,7 @@ drawer-uk:
               label:
               items:
               - <<: *business_school_rankings
+              - <<: *business_school
           - <<: *europe_start-up_hubs
           - <<: *entrepreneurship
           - <<: *recruitment
