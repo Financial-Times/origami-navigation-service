@@ -471,7 +471,6 @@ footer:
       - <<: *ft_community
       - <<: *ft_live_events
       - <<: *ft_forums
-      - <<: *ft_board_network
       - <<: *board_director_programme
 
 navbar-simple:

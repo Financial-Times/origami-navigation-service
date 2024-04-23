@@ -1517,11 +1517,6 @@ links:
     url: "https://forums.ft.com/"
     submenu:
 
-  - &ft_board_network
-    label: "FT Board Network"
-    url: "https://forums.ft.com/ft-board-network"
-    submenu:
-
   - &board_director_programme
     label: "Board Director Programme"
     url: "https://bdp.ft.com/"
