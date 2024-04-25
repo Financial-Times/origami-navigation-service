@@ -63,7 +63,7 @@
     "proclaim": "^3.6.0",
     "react-dom": "^18.2.0",
     "sinon": "^17",
-    "supertest": "^6.3.4",
+    "supertest": "^7.0.0",
     "throat": "^6.0.2"
   },
   "snyk": true,
