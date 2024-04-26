@@ -485,7 +485,7 @@ navbar-right:
   items:
   - <<: *digital_edition
   - <<: *portfolio
-  - <<: *my_account
+  - <<: *my_ft
 
 
 navbar-right-anon:
