@@ -485,15 +485,25 @@ navbar-right:
   items:
   - <<: *digital_edition
   - <<: *portfolio
+  - <<: *my_ft
+
+navbar-top-right:
+  label: Navigation
+  items:
   - <<: *my_account
+  - <<: *header_subscribe
 
-
-navbar-right-anon:
+# To make the data better reflect the o-header markup
+# We are introducing a new navbar-top-right-anon object
+# As the navbar-right object is used for the right bottom row
+# For backwards compatibility we have kept navbar-right-anon as well
+navbar-top-right-anon: &navbar-top-right-anon
   label: Navigation
   items:
   - <<: *sign_in
   - <<: *header_subscribe
 
+navbar-right-anon: *navbar-top-right-anon
 
 navbar-uk:
   label: Navigation
