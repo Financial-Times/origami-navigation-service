@@ -802,11 +802,6 @@ links:
     url: "/andrew-hill"
     submenu:
 
-  - &john_kay
-    label: "John Kay"
-    url: "/john-kay"
-    submenu:
-
   - &lucy_kellaway
     label: "Lucy Kellaway"
     url: "/lucy-kellaway"
