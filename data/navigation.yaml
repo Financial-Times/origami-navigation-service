@@ -318,6 +318,7 @@ drawer-uk:
       - <<: *tsa
       - <<: *moral_money
       - <<: *visual_data
+      - <<: *ftedit
       - <<: *newsletters
       - <<: *video
       - <<: *podcasts
