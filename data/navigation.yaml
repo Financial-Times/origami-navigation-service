@@ -205,6 +205,7 @@ drawer-uk:
           - <<: *lex
           - <<: *obituaries
           - <<: *letters
+      - <<: *lex
       - <<: *work_careers
         submenu: &work_careers_submenu
           label:
@@ -366,6 +367,7 @@ drawer-international:
       - <<: *climate_capital
       - <<: *opinion
         submenu: *opinion_submenu
+      - <<: *lex
       - <<: *work_careers
         submenu: *work_careers_submenu
       - <<: *life_arts
@@ -523,6 +525,7 @@ navbar-uk:
   - <<: *climate_capital
   - <<: *opinion
     submenu: *opinion_submenu
+  - <<: *lex
   - <<: *work_careers
     submenu: *work_careers_submenu
   - <<: *life_arts
@@ -546,6 +549,7 @@ navbar-international:
   - <<: *climate_capital
   - <<: *opinion
     submenu: *opinion_submenu
+  - <<: *lex
   - <<: *work_careers
     submenu: *work_careers_submenu
   - <<: *life_arts
