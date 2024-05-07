@@ -312,14 +312,13 @@ drawer-uk:
     submenu: &recommends_submenu
       label:
       items:
-      - <<: *lex
       - <<: *alphaville
+      - <<: *ftedit
       - <<: *lunch_with_the_ft
       - <<: *globetrotter
       - <<: *tsa
       - <<: *moral_money
       - <<: *visual_data
-      - <<: *ftedit
       - <<: *newsletters
       - <<: *video
       - <<: *podcasts
