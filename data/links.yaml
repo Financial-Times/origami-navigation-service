@@ -1307,6 +1307,11 @@ links:
     url: "/news-feed"
     submenu:
 
+  - &ftedit
+    label: "FT Edit"
+    url: "/ft-edit"
+    submenu:
+
   - &newsletters
     label: "Newsletters"
     url: "/newsletters"
