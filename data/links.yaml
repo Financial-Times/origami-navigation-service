@@ -1613,9 +1613,9 @@ links:
     url: "https://help.ft.com/help/legal/slavery-statement/"
     submenu:
 
-  - &enterprise_tools
-    label: "Enterprise Tools"
-    url: "https://kat.ft.com/"
+  - &subscription_manager
+    label: "Subscription Manager"
+    url: "https://subscription-manager.ft.com/"
     submenu:
 
   - &about_us_careers
