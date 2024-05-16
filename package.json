@@ -62,7 +62,7 @@
     "nodemon": "^3.1.0",
     "proclaim": "^3.6.0",
     "react-dom": "^18.3.1",
-    "sinon": "^17",
+    "sinon": "^18",
     "supertest": "^7.0.0",
     "throat": "^6.0.2"
   },
