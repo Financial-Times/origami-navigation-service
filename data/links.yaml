@@ -156,6 +156,11 @@ links:
     url: "/uk-general-election"
     submenu:
 
+  - &ukelection24
+    label: "UK General Election 2024"
+    url: "/uk-general-election-2024"
+    submenu:
+
   - &uk_companies
     label: "UK Companies"
     url: "/uk-companies"
