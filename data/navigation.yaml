@@ -30,6 +30,7 @@ drawer-uk:
               items:
               - <<: *uk_economy
               - <<: *uk_politics_policy
+              - <<: *ukelection24
               - <<: *uk_companies
               - <<: *personal_finance
           - <<: *us
