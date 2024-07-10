@@ -86,10 +86,6 @@ This is mostly a Node.js application but with the following external components:
 
 See the live service for more information on how to use.
 
-## Heroku Pipeline Name
-
-origami-navigation-service
-
 ## First Line Troubleshooting
 
 There are a few things you can try before contacting the Origami team:
