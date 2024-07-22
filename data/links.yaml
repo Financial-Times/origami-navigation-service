@@ -1047,6 +1047,11 @@ links:
     url: "/globetrotter/copenhagen"
     submenu:
 
+  - &globetrotteredinburgh
+    label: "Edinburgh"
+    url: "/globetrotter/edinburgh"
+    submenu:
+
   - &globetrottermelbourne
     label: "Melbourne"
     url: "/globetrotter/melbourne"
