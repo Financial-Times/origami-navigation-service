@@ -67,7 +67,7 @@
     "istanbul": "^0.4",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.8",
-    "mocha": "^10.6.0",
+    "mocha": "^10.7.0",
     "mockery": "^2",
     "nodemon": "^3.1.4",
     "proclaim": "^3.6.0",
