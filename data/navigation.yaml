@@ -279,6 +279,7 @@ drawer-uk:
               label:
               items:
               - <<: *globetrottercopenhagen
+              - <<: *globetrotteredinburgh
               - <<: *globetrotterfrankfurt
               - <<: *globetrotterhongkong
               - <<: *globetrotterlondon
