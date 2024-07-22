@@ -1368,7 +1368,7 @@ links:
     submenu:
 
   - &my_ft
-    label: "myFT Feed"
+    label: "myFT"
     url: "/myft"
     submenu:
 
